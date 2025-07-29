@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from "react-router"
 import Header from "./components/Header"
 import { useEffect, useState } from "react"
+import AboutMe from "./components/AboutMe";
 
 function App() {
   const location = useLocation()
@@ -20,15 +21,18 @@ function App() {
 
 
   return (
-    <Routes>
-      <Route path="/" element={<Header page={PagePosition} />} />
+    <>
+      <Header page={PagePosition} />
+      <Routes>
+        <Route path="/" element={<AboutMe />} />
 
-      <Route path="/a" element={<Header page={PagePosition} />} />
-      <Route path="/b" element={<Header page={PagePosition} />} />
-      <Route path="/c" element={<Header page={PagePosition} />} />
+        <Route path="/a" element={<p>test a</p>} />
+        <Route path="/b" element={<p>test b</p>} />
+        <Route path="/c" element={<p>test c</p>} />
 
-      <Route path="*" element={<p>Error</p>} />
-    </Routes>
+        <Route path="*" element={<p>Error</p>} />
+      </Routes>
+    </>
   )
 }
 
