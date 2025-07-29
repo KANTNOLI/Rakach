@@ -9,7 +9,7 @@ interface props {
     page: string
 }
 
-function Header({ page }: props) { 
+function Header({ page }: props) {
     const pageAboutMe = useRef<HTMLAnchorElement>(null)
     const pageA = useRef<HTMLAnchorElement>(null)
     const pageB = useRef<HTMLAnchorElement>(null)
@@ -43,7 +43,7 @@ function Header({ page }: props) {
                 <Link ref={pageA} to="/a" className={style.HeaderNavigatePage} draggable="false">What Coaching Looks Like</Link>
                 <Link ref={pageB} to="/b" className={style.HeaderNavigatePage} draggable="false">Solutions</Link>
                 <Link ref={pageC} to="/c" className={style.HeaderNavigatePage} draggable="false">Request a free coaching session</Link>
-                
+
                 <div ref={ActivePAge} className={style.HeaderNavigateActivePageBox}>
                     <p className={style.HeaderNavigateActivePage}></p>
                 </div>
