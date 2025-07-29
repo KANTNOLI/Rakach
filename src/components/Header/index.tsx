@@ -44,7 +44,7 @@ function Header({ page }: props) {
     useEffect(() => {
         if (MobileMenu && Nav.current) {
             disableBodyScroll(Nav.current);
-        } else {
+        } else if (Nav.current) {
             enableBodyScroll(Nav.current);
         }
     }, [MobileMenu])
