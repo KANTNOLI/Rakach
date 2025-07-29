@@ -5,6 +5,8 @@ import { Link } from 'react-router';
 import style from "./Header.module.scss"
 import { useEffect, useRef, useState } from 'react';
 
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+
 interface props {
     page: string
 }
@@ -16,6 +18,7 @@ function Header({ page }: props) {
     const pageC = useRef<HTMLAnchorElement>(null)
 
     const ActivePAge = useRef<HTMLParagraphElement>(null)
+    const Nav = useRef<HTMLParagraphElement>(null)
 
     const [MobileMenu, setMobileMenu] = useState<boolean>(false)
 
@@ -27,6 +30,7 @@ function Header({ page }: props) {
     }
 
     useEffect(() => {
+        setMobileMenu(false)
         if (pageAboutMe.current && ActivePAge.current) {
             const HalfPageText = Pages[page].current.getBoundingClientRect().width / 2
             const LeftPageText = Pages[page].current.getBoundingClientRect().left - 25
@@ -37,10 +41,19 @@ function Header({ page }: props) {
 
     }, [page])
 
+    useEffect(() => {
+        if (MobileMenu && Nav.current) {
+            disableBodyScroll(Nav.current);
+        } else {
+            enableBodyScroll(Nav.current);
+        }
+    }, [MobileMenu])
+
+
 
     return (
         <section className={style.Header}>
-            <nav className={`${style.HeaderNavigate} ${MobileMenu ? "" : style.HeaderOff}`}>
+            <nav ref={Nav} className={`${style.HeaderNavigate} ${MobileMenu ? "" : style.HeaderOff}`}>
                 <Link ref={pageAboutMe} to="/" className={style.HeaderNavigatePage} draggable="false">About Me</Link>
                 <Link ref={pageA} to="/a" className={style.HeaderNavigatePage} draggable="false">What Coaching Looks Like</Link>
                 <Link ref={pageB} to="/b" className={style.HeaderNavigatePage} draggable="false">Solutions</Link>
@@ -51,7 +64,11 @@ function Header({ page }: props) {
                 </div>
             </nav>
 
-            <div onClick={() => setMobileMenu(before => !before)} className={MobileMenu ? style.menuActive : style.menu}>text</div>
+            <div onClick={() => setMobileMenu(before => !before)} className={MobileMenu ? style.menuActive : style.menu}>
+                <p className={MobileMenu ? style.menuP1 : ""}></p>
+                <p className={MobileMenu ? style.menuP2 : ""}></p>
+                <p className={MobileMenu ? style.menuP3 : ""}></p>
+            </div>
         </section>
     )
 }
