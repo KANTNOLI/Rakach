@@ -4,5 +4,22 @@
   border: 0;
 
   font-family: Sen, sans-serif;
-    background-color: #D9D9D9;
 }
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #b8b8b8;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #969a71;
+  border-radius: 4px;
+}
+
+
+
+
+/* // background-color: #969A71; */
