@@ -9,7 +9,7 @@ interface props {
     page: string
 }
 
-function Header({ page }: props) {
+function Header({ page }: props) { 
     const pageAboutMe = useRef<HTMLAnchorElement>(null)
     const pageA = useRef<HTMLAnchorElement>(null)
     const pageB = useRef<HTMLAnchorElement>(null)
