@@ -3,7 +3,7 @@
 import { Link } from 'react-router';
 
 import style from "./Header.module.scss"
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface props {
     page: string
@@ -16,6 +16,8 @@ function Header({ page }: props) {
     const pageC = useRef<HTMLAnchorElement>(null)
 
     const ActivePAge = useRef<HTMLParagraphElement>(null)
+
+    const [MobileMenu, setMobileMenu] = useState<boolean>(false)
 
     const Pages: any = {
         "AboutMe": pageAboutMe,
@@ -37,8 +39,8 @@ function Header({ page }: props) {
 
 
     return (
-        <section className={style.Header} >
-            <nav className={style.HeaderNavigate}>
+        <section className={style.Header}>
+            <nav className={`${style.HeaderNavigate} ${MobileMenu ? "" : style.HeaderOff}`}>
                 <Link ref={pageAboutMe} to="/" className={style.HeaderNavigatePage} draggable="false">About Me</Link>
                 <Link ref={pageA} to="/a" className={style.HeaderNavigatePage} draggable="false">What Coaching Looks Like</Link>
                 <Link ref={pageB} to="/b" className={style.HeaderNavigatePage} draggable="false">Solutions</Link>
@@ -47,8 +49,9 @@ function Header({ page }: props) {
                 <div ref={ActivePAge} className={style.HeaderNavigateActivePageBox}>
                     <p className={style.HeaderNavigateActivePage}></p>
                 </div>
-
             </nav>
+
+            <div onClick={() => setMobileMenu(before => !before)} className={MobileMenu ? style.menuActive : style.menu}>text</div>
         </section>
     )
 }
