@@ -8,6 +8,10 @@ function AboutMe() {
     return (
         <section className={stylePreview.AboutMe}>
 
+
+
+            
+
             <section className={stylePreview.Preview}>
                 <div className={stylePreview.PreviewFPart}>
                     <p className={stylePreview.PreviewFPartTitle}>Ready to turn your broken heart into a confident, peaceful one?</p>
