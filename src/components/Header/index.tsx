@@ -23,10 +23,10 @@ function Header({ page }: props) {
     const [MobileMenu, setMobileMenu] = useState<boolean>(false)
 
     const Pages: any = {
-        "Rakach/AboutMe": pageAboutMe,
-        "Rakach/a": pageA,
-        "Rakach/b": pageB,
-        "Rakach/c": pageC,
+        "AboutMe": pageAboutMe,
+        "a": pageA,
+        "b": pageB,
+        "c": pageC,
     }
 
 
