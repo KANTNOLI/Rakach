@@ -24,11 +24,11 @@ function App() {
     <>
       <Header page={PagePosition} />
       <Routes>
-        <Route path="/" element={<AboutMe />} />
+        <Route path="/Rakach/" element={<AboutMe />} />
 
-        <Route path="/a" element={<p>test a</p>} />
-        <Route path="/b" element={<p>test b</p>} />
-        <Route path="/c" element={<p>test c</p>} />
+        <Route path="/Rakach/a" element={<p>test a</p>} />
+        <Route path="/Rakach/b" element={<p>test b</p>} />
+        <Route path="/Rakach/c" element={<p>test c</p>} />
 
         <Route path="*" element={<p>Error</p>} />
       </Routes>
