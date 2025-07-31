@@ -7,14 +7,14 @@ function App() {
   const location = useLocation()
 
   const path = location.pathname;
-  const currentPage = path.split('/').filter(Boolean).pop() || "AboutMe";
+  const currentPage = path.split('/').filter(Boolean).pop() || "Rakach";
 
-  const [PagePosition, setPagePosition] = useState<string>(currentPage || "AboutMe")
+  const [PagePosition, setPagePosition] = useState<string>(currentPage || "Rakach")
 
 
   useEffect(() => {
     const path = location.pathname;
-    const currentPage = path.split('/').filter(Boolean).pop() || "AboutMe";
+    const currentPage = path.split('/').filter(Boolean).pop() || "Rakach";
     
     console.log(currentPage);
     
