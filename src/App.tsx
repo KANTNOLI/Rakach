@@ -15,6 +15,9 @@ function App() {
   useEffect(() => {
     const path = location.pathname;
     const currentPage = path.split('/').filter(Boolean).pop() || "AboutMe";
+    
+    console.log(currentPage);
+    
     setPagePosition(currentPage);
   }, [location])
 
