@@ -29,9 +29,14 @@ function Header({ page }: props) {
         "c": pageC,
     }
 
+    let a = 0
+
+    console.log(a);
+    
+
     useEffect(() => {
         setMobileMenu(false)
-        if (pageAboutMe.current && ActivePAge.current) {
+        if (pageAboutMe.current && ActivePAge.current && Pages[page]) {  
             const HalfPageText = Pages[page].current.getBoundingClientRect().width / 2
             const LeftPageText = Pages[page].current.getBoundingClientRect().left - 25
 
