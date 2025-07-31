@@ -19,7 +19,8 @@
   border-radius: 4px;
 }
 
-
-
+li {
+  list-style-position: inside;
+}
 
 /* // background-color: #969A71; */
