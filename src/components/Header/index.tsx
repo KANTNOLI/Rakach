@@ -23,20 +23,19 @@ function Header({ page }: props) {
     const [MobileMenu, setMobileMenu] = useState<boolean>(false)
 
     const Pages: any = {
-        "AboutMe": pageAboutMe,
-        "a": pageA,
-        "b": pageB,
-        "c": pageC,
+        "Rakach/AboutMe": pageAboutMe,
+        "Rakach/a": pageA,
+        "Rakach/b": pageB,
+        "Rakach/c": pageC,
     }
 
-    let a = 0
-
-    console.log(a);
-    
 
     useEffect(() => {
         setMobileMenu(false)
-        if (pageAboutMe.current && ActivePAge.current && Pages[page]) {  
+        console.log(1);
+        
+        if (pageAboutMe.current && ActivePAge.current && Pages[page]) {
+        console.log(2);
             const HalfPageText = Pages[page].current.getBoundingClientRect().width / 2
             const LeftPageText = Pages[page].current.getBoundingClientRect().left - 25
 
@@ -59,10 +58,10 @@ function Header({ page }: props) {
     return (
         <section className={style.Header}>
             <nav ref={Nav} className={`${style.HeaderNavigate} ${MobileMenu ? "" : style.HeaderOff}`}>
-                <Link ref={pageAboutMe} to="/" className={style.HeaderNavigatePage} draggable="false">About Me</Link>
-                <Link ref={pageA} to="/a" className={style.HeaderNavigatePage} draggable="false">What Coaching Looks Like</Link>
-                <Link ref={pageB} to="/b" className={style.HeaderNavigatePage} draggable="false">Solutions</Link>
-                <Link ref={pageC} to="/c" className={style.HeaderNavigatePage} draggable="false">Request a free coaching session</Link>
+                <Link ref={pageAboutMe} to="Rakach/" className={style.HeaderNavigatePage} draggable="false">About Me</Link>
+                <Link ref={pageA} to="Rakach/a" className={style.HeaderNavigatePage} draggable="false">What Coaching Looks Like</Link>
+                <Link ref={pageB} to="Rakach/b" className={style.HeaderNavigatePage} draggable="false">Solutions</Link>
+                <Link ref={pageC} to="Rakach/c" className={style.HeaderNavigatePage} draggable="false">Request a free coaching session</Link>
 
                 <div ref={ActivePAge} className={style.HeaderNavigateActivePageBox}>
                     <p className={style.HeaderNavigateActivePage}></p>
