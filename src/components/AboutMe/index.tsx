@@ -1,16 +1,12 @@
 
 import stylePreview from "./Preview.module.scss"
-
+import styleExample from "./Example.module.scss"
 
 
 function AboutMe() {
 
     return (
         <section className={stylePreview.AboutMe}>
-
-
-
-            
 
             <section className={stylePreview.Preview}>
                 <div className={stylePreview.PreviewFPart}>
@@ -29,7 +25,28 @@ function AboutMe() {
                     {/* IMG */}
                     w 500px
                 </div>
+            </section>
 
+            <section className={styleExample.Example}>
+                <div className={styleExample.ExampleLPart}>
+                    500px
+                </div>
+
+                <div className={styleExample.ExampleRPart}>
+                    <p className={styleExample.ExampleRPartTitle}>Something has happened with your teen...</p>
+                    <p className={styleExample.ExampleRPartTitleDesc}>And as a parent, you’re at the lowest point you never imagined possible. Maybe…</p>
+
+                    <ul className={styleExample.ExampleRPartList}>
+                        <li className={styleExample.ExampleRPartListPart}>Their secret is out</li>
+                        <li className={styleExample.ExampleRPartListPart}>You saw what was on their phone</li>
+                        <li className={styleExample.ExampleRPartListPart}>The cops were called</li>
+                        <li className={styleExample.ExampleRPartListPart}>They said what they said, and it broke your soul</li>
+                    </ul>
+
+                    <p className={`${styleExample.ExampleRPartDesc} ${styleExample.ExampleRPartDescFist}`}>Everyone’s behavior is… Horrifying. You never thought the toddler who threw their arms around you could be here. And now you want to hide under a rock for how disappointed and ashamed you feel.</p>
+                    <p className={styleExample.ExampleRPartDesc}>This spot feels permanently condemned. Life could never be the same again after what you know now… but it can actually be better.</p>
+                    <p className={styleExample.ExampleRPartDesc}>Better for you on the daily, but even better for how you love and help your teen. Which is better for them forever</p>
+                </div>
             </section>
 
         </section>
