@@ -1,6 +1,7 @@
 
 import stylePreview from "./Preview.module.scss"
 import styleExample from "./Example.module.scss"
+import styleProcess from "./Process.module.scss"
 
 
 function AboutMe() {
@@ -47,6 +48,12 @@ function AboutMe() {
                     <p className={styleExample.ExampleRPartDesc}>This spot feels permanently condemned. Life could never be the same again after what you know now… but it can actually be better.</p>
                     <p className={styleExample.ExampleRPartDesc}>Better for you on the daily, but even better for how you love and help your teen. Which is better for them forever</p>
                 </div>
+            </section>
+
+            <section className={styleProcess.Process}>
+                <p className={styleProcess.ProcessIdea}>The Process</p>
+                <p className={styleProcess.ProcessTitle}>It can feel confusing and overwhelming to try and “fix” what you’re not even sure is the problem</p>
+                <p className={styleProcess.ProcessDesc}>Welcome to my private parent coaching program, 4 months for a better forever</p>
             </section>
 
         </section>
