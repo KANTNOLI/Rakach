@@ -115,6 +115,34 @@
     }
 }
 
+.Line{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    height: auto;
+
+    .LineCheck{
+        width: 30px;
+        height: 30px;
+        img{
+            height: 100%;
+        }
+    }
+
+    .LineTitle{
+        margin-left: 10px;
+        font-size: 18px;
+
+        span{
+            font-size: 19px;
+            font-weight: bold;
+            color: #969a71;
+        }
+    }
+}
+
 
 
 @media (max-width: 1350px) {
@@ -166,10 +194,9 @@
                     border-radius: 100%;
                     background-color: #d16783;
 
-                    img {
-                        height: 45%;
-                        filter: invert(100%);
-                    }
+                   img {
+                    height: 65%;
+                }
                 }
 
                 .WorkTypesTitle {
@@ -285,9 +312,8 @@
                     background-color: #d16783;
 
                     img {
-                        height: 45%;
-                        filter: invert(100%);
-                    }
+                    height: 65%;
+                }
                 }
 
                 .WorkTypesTitle {
