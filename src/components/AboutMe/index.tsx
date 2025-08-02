@@ -2,6 +2,7 @@ import stylePreview from "./Preview.module.scss";
 import styleExample from "./Example.module.scss";
 import styleProcess from "./Process.module.scss";
 import styleSteps from "./Steps.module.scss";
+import styleWork from "./Work.module.scss";
 
 function AboutMe() {
   return (
@@ -196,6 +197,45 @@ function AboutMe() {
         </p>
 
         <button className={styleSteps.StepsBtn}>Book your free call</button>
+      </section>
+
+      <section className={styleWork.Work}>
+        <p className={styleWork.WorkTitle}>Ways to work with me</p>
+        <p className={styleWork.WorkTitleDesc}>
+          Pick the option that works best for you
+        </p>
+
+        <div className={styleWork.WorkTypes}>
+          <div className={styleWork.WorkTypesType}>
+            <div className={styleWork.WorkTypesIcon}>
+              <img src="./heart.svg" alt="heart.svg" />
+            </div>
+
+            <p className={styleWork.WorkTypesTitle}>Drop-in</p>
+            <div className={styleWork.Line}>
+              <div className={styleWork.Line}> </div>
+              <p className={styleWork.Line}></p>
+            </div>
+          </div>
+
+          <div className={styleWork.WorkTypesType}>
+            <div className={styleWork.WorkTypesIcon}>
+              <img src="./heart.svg" alt="heart.svg" />
+            </div>
+
+            <p className={styleWork.WorkTypesTitle}>Confidence</p>
+            <p className={styleWork.WorkTypesDesc}>-</p>
+          </div>
+
+          <div className={styleWork.WorkTypesType}>
+            <div className={styleWork.WorkTypesIcon}>
+              <img src="./heart.svg" alt="heart.svg" />
+            </div>
+
+            <p className={styleWork.WorkTypesTitle}>Empowerment</p>
+            <p className={styleWork.WorkTypesDesc}>-</p>
+          </div>
+        </div>
       </section>
     </section>
   );
