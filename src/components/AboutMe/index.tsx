@@ -1,6 +1,7 @@
 import stylePreview from "./Preview.module.scss";
 import styleExample from "./Example.module.scss";
 import styleProcess from "./Process.module.scss";
+import styleSteps from "./Steps.module.scss";
 
 function AboutMe() {
   return (
@@ -141,6 +142,60 @@ function AboutMe() {
           our kids and usually they’re painful. Let’s fix that and use them to
           your advantage.
         </p>
+      </section>
+
+      <section className={styleSteps.Steps}>
+        <p className={styleSteps.StepsTitle}>
+          When you complete these 8 specific steps, you’ll live in a house where
+          there’s...
+        </p>
+
+        <div className={styleSteps.StepsTypes}>
+          <div className={styleSteps.StepsTypesType}>
+            <div className={styleSteps.StepsTypesIcon}>
+              <img src="./home.png" alt="home.png" />
+            </div>
+
+            <p className={styleSteps.StepsTypesTitle}>Connection</p>
+            <p className={styleSteps.StepsTypesDesc}>
+              There’s more time to focus on what matters most: Your love and
+              connection as a family.
+            </p>
+          </div>
+
+          <div className={styleSteps.StepsTypesType}>
+            <div className={styleSteps.StepsTypesIcon}>
+              <img src="./home.png" alt="home.png" />
+            </div>
+
+            <p className={styleSteps.StepsTypesTitle}>Confidence</p>
+            <p className={styleSteps.StepsTypesDesc}>
+              There is no more wondering where you went wrong or if your
+              children will have a quality adult life. You’ll have confidence in
+              yourself as a parent and for the future like never before.
+            </p>
+          </div>
+
+          <div className={styleSteps.StepsTypesType}>
+            <div className={styleSteps.StepsTypesIcon}>
+              <img src="./home.png" alt="home.png" />
+            </div>
+
+            <p className={styleSteps.StepsTypesTitle}>Empowerment</p>
+            <p className={styleSteps.StepsTypesDesc}>
+              The situations you're struggling with now and those in the future
+              will no longer dictate your emotions, quality of connections with
+              your kids… and yes, even mental health challenges for both of you!
+            </p>
+          </div>
+        </div>
+        <p className={styleSteps.StepsDesc}>
+          Nothing will intimidate you or make you feel powerless as a parent
+          ever again.
+          <div className={styleSteps.customLine}>{"   "}</div>
+        </p>
+
+        <button className={styleSteps.StepsBtn}>Book your free call</button>
       </section>
     </section>
   );
