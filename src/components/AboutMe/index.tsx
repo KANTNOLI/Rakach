@@ -30,6 +30,94 @@ function AboutMe() {
         <div className={stylePreview.PreviewSPart}>{/* IMG */}w 500px</div>
       </section>
 
+            <section className={styleWork.Work}>
+        <p className={styleWork.WorkTitle}>Ways to work with me</p>
+        <p className={styleWork.WorkTitleDesc}>
+          Pick the option that works best for you
+        </p>
+
+        <div className={styleWork.WorkTypes}>
+          <div className={styleWork.WorkTypesType}>
+            <div className={styleWork.WorkTypesIcon}>
+              <img src="./heart.svg" alt="heart.svg" />
+            </div>
+
+            <p className={styleWork.WorkTypesTitle}>Drop-in</p>
+            <div className={styleWork.Line}>
+              <div className={styleWork.LineCheck}>
+                <img src="./check.svg" alt="check.svg" />
+              </div>
+               <p className={styleWork.LineTitle}>8 or more hours a month of group coaching</p>
+            </div>
+
+            <div className={styleWork.Line}>
+              <div className={styleWork.LineCheck}>
+                <img src="./check.svg" alt="check.svg" /></div>
+               <p className={styleWork.LineTitle}>No recordings</p>
+            </div>
+
+            <div className={styleWork.Line}>
+              <div className={styleWork.LineCheck}>
+                <img src="./check.svg" alt="check.svg" /></div>
+               <p className={styleWork.LineTitle}>No contract </p>
+            </div>
+            
+          </div>
+
+          <div className={styleWork.WorkTypesType}>
+            <div className={styleWork.WorkTypesIcon}>
+              <img src="./heart.svg" alt="heart.svg" />
+            </div>
+
+            <p className={styleWork.WorkTypesTitle}>Confidence</p>
+             <div className={styleWork.Line}>
+              <div className={styleWork.LineCheck}>
+                <img src="./check.svg" alt="check.svg" />
+              </div>
+               <p className={styleWork.LineTitle}>8 or more hours a month of group coaching</p>
+            </div>
+
+            <div className={styleWork.Line}>
+              <div className={styleWork.LineCheck}>
+                <img src="./check.svg" alt="check.svg" /></div>
+               <p className={styleWork.LineTitle}>No recordings</p>
+            </div>
+
+            <div className={styleWork.Line}>
+              <div className={styleWork.LineCheck}>
+                <img src="./check.svg" alt="check.svg" /></div>
+               <p className={styleWork.LineTitle}>No contract </p>
+            </div>
+          </div>
+ 
+         <div className={styleWork.WorkTypesType}>
+            <div className={styleWork.WorkTypesIcon}>
+              <img src="./heart.svg" alt="heart.svg" />
+            </div>
+
+            <p className={styleWork.WorkTypesTitle}>Empowerment</p>
+             <div className={styleWork.Line}>
+              <div className={styleWork.LineCheck}>
+                <img src="./check.svg" alt="check.svg" />
+              </div>
+               <p className={styleWork.LineTitle}><span>Bonus: </span>Free e-book</p>
+            </div>
+
+            <div className={styleWork.Line}>
+              <div className={styleWork.LineCheck}>
+                <img src="./check.svg" alt="check.svg" /></div>
+               <p className={styleWork.LineTitle}><span>Bonus: </span>o recordings</p>
+            </div>
+
+            <div className={styleWork.Line}>
+              <div className={styleWork.LineCheck}>
+                <img src="./check.svg" alt="check.svg" /></div>
+               <p className={styleWork.LineTitle}><span>Bonus: </span>No contract </p>
+            </div>
+          </div>
+        </div> 
+      </section>
+
       <section className={styleExample.Example}>
         <div className={styleExample.ExampleLPart}>500px</div>
 
@@ -147,7 +235,7 @@ function AboutMe() {
 
       <section className={styleSteps.Steps}>
         <p className={styleSteps.StepsTitle}>
-          When you complete these 8 specific steps, you’ll live in a house where
+          When you complete these 8 specific steps,you’ll live in a house where
           there’s...
         </p>
 
@@ -199,46 +287,9 @@ function AboutMe() {
         <button className={styleSteps.StepsBtn}>Book your free call</button>
       </section>
 
-      <section className={styleWork.Work}>
-        <p className={styleWork.WorkTitle}>Ways to work with me</p>
-        <p className={styleWork.WorkTitleDesc}>
-          Pick the option that works best for you
-        </p>
 
-        <div className={styleWork.WorkTypes}>
-          <div className={styleWork.WorkTypesType}>
-            <div className={styleWork.WorkTypesIcon}>
-              <img src="./heart.svg" alt="heart.svg" />
-            </div>
-
-            <p className={styleWork.WorkTypesTitle}>Drop-in</p>
-            <div className={styleWork.Line}>
-              <div className={styleWork.Line}> </div>
-              <p className={styleWork.Line}></p>
-            </div>
-          </div>
-
-          <div className={styleWork.WorkTypesType}>
-            <div className={styleWork.WorkTypesIcon}>
-              <img src="./heart.svg" alt="heart.svg" />
-            </div>
-
-            <p className={styleWork.WorkTypesTitle}>Confidence</p>
-            <p className={styleWork.WorkTypesDesc}>-</p>
-          </div>
-
-          <div className={styleWork.WorkTypesType}>
-            <div className={styleWork.WorkTypesIcon}>
-              <img src="./heart.svg" alt="heart.svg" />
-            </div>
-
-            <p className={styleWork.WorkTypesTitle}>Empowerment</p>
-            <p className={styleWork.WorkTypesDesc}>-</p>
-          </div>
-        </div>
-      </section>
-    </section>
-  );
+    </section> 
+  ); 
 }
 
 export default AboutMe;
