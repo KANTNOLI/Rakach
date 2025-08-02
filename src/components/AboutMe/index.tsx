@@ -3,6 +3,7 @@ import styleExample from "./Example.module.scss";
 import styleProcess from "./Process.module.scss";
 import styleSteps from "./Steps.module.scss";
 import styleWork from "./Work.module.scss";
+import styleAbout from "./About.module.scss";
 
 function AboutMe() {
   return (
@@ -30,7 +31,7 @@ function AboutMe() {
         <div className={stylePreview.PreviewSPart}>{/* IMG */}w 500px</div>
       </section>
 
-            <section className={styleWork.Work}>
+      <section className={styleWork.Work}>
         <p className={styleWork.WorkTitle}>Ways to work with me</p>
         <p className={styleWork.WorkTitleDesc}>
           Pick the option that works best for you
@@ -47,21 +48,21 @@ function AboutMe() {
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" />
               </div>
-               <p className={styleWork.LineTitle}>8 or more hours a month of group coaching</p>
+              <p className={styleWork.LineTitle}>8 or more hours a month of group coaching</p>
             </div>
 
             <div className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
-               <p className={styleWork.LineTitle}>No recordings</p>
+              <p className={styleWork.LineTitle}>No recordings</p>
             </div>
 
             <div className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
-               <p className={styleWork.LineTitle}>No contract </p>
+              <p className={styleWork.LineTitle}>No contract </p>
             </div>
-            
+
           </div>
 
           <div className={styleWork.WorkTypesType}>
@@ -70,52 +71,52 @@ function AboutMe() {
             </div>
 
             <p className={styleWork.WorkTypesTitle}>Confidence</p>
-             <div className={styleWork.Line}>
+            <div className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" />
               </div>
-               <p className={styleWork.LineTitle}>8 or more hours a month of group coaching</p>
+              <p className={styleWork.LineTitle}>8 or more hours a month of group coaching</p>
             </div>
 
             <div className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
-               <p className={styleWork.LineTitle}>No recordings</p>
+              <p className={styleWork.LineTitle}>No recordings</p>
             </div>
 
             <div className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
-               <p className={styleWork.LineTitle}>No contract </p>
+              <p className={styleWork.LineTitle}>No contract </p>
             </div>
           </div>
- 
-         <div className={styleWork.WorkTypesType}>
+
+          <div className={styleWork.WorkTypesType}>
             <div className={styleWork.WorkTypesIcon}>
               <img src="./heart.svg" alt="heart.svg" />
             </div>
 
             <p className={styleWork.WorkTypesTitle}>Empowerment</p>
-             <div className={styleWork.Line}>
+            <div className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" />
               </div>
-               <p className={styleWork.LineTitle}><span>Bonus: </span>Free e-book</p>
+              <p className={styleWork.LineTitle}><span>Bonus: </span>Free e-book</p>
             </div>
 
             <div className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
-               <p className={styleWork.LineTitle}><span>Bonus: </span>o recordings</p>
+              <p className={styleWork.LineTitle}><span>Bonus: </span>o recordings</p>
             </div>
 
             <div className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
-               <p className={styleWork.LineTitle}><span>Bonus: </span>No contract </p>
+              <p className={styleWork.LineTitle}><span>Bonus: </span>No contract </p>
             </div>
           </div>
-        </div> 
+        </div>
       </section>
 
       <section className={styleExample.Example}>
@@ -287,9 +288,22 @@ function AboutMe() {
         <button className={styleSteps.StepsBtn}>Book your free call</button>
       </section>
 
+      <section className={styleAbout.About}>
+        <div className={styleAbout.AboutLPart}>
+          <p className={styleAbout.AboutLPartTitle}>About Heather Frazier</p>
 
-    </section> 
-  ); 
+          <p className={styleAbout.AboutLPartDesc}>Known as the Teen Whisperer, I’m author of a best-selling book, “How I Fixed My Teen,” host of the 5 star podcast Pivot Parenting, was a six-month guest on ABC4’s highly rated daytime show Good Things Utah, published in Holistic Life magazine, and I’m the authority you’ve been looking for. My expertise is rooted in transformative coaching philosophies learned through certification at The Life Coach School, advanced trauma certification, and Jody Moore’s advancАed faith-based certification.</p>
+          <p className={styleAbout.AboutLPartDesc}>In addition to being a dedicated mother of four, I’m an active member of the Church of Jesus Christ of Latter-day Saints. I love to inspire and guide parents, and am an invaluable resource for smooth navigation of parenting complexities during the teenage years.</p>
+        </div>
+
+        <div className={styleAbout.AboutRPart}>
+          500px
+        </div>
+      </section>
+
+
+    </section>
+  );
 }
 
 export default AboutMe;
