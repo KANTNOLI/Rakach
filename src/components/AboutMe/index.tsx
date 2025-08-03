@@ -7,7 +7,8 @@ import styleSteps from "./Steps.module.scss";
 import styleWork from "./Work.module.scss";
 import styleAbout from "./About.module.scss";
 import styleExit from "./Exit.module.scss"
-// import { useEffect } from "react";
+import { disableBodyScroll } from 'body-scroll-lock-upgrade';
+import { useEffect, useRef } from "react";
 
 function AboutMe() {
   const Process = [
@@ -35,21 +36,22 @@ function AboutMe() {
     }
   ]
 
-  // useEffect(() => {
-  //   const body = document.body;
-  //   body.style.overflowX = 'hidden'; // Запрещаем горизонтальную прокрутку
+  const body = useRef<HTMLDivElement>(null)
 
-  //   // Запрещаем прокрутку тела
-  //   disableBodyScroll(body);
-  // }, [])
+  useEffect(() => {
+    
+    if(body.current){
+    //  disableBodyScroll(body.current);
+    }
+  }, [])
 
   return (
-    <section className={stylePreview.AboutMe}>
+    <section ref={body} className={stylePreview.AboutMe}>
       <section className={stylePreview.Preview}>
         <motion.div
           viewport={{ once: true }}
-          initial={{ x: -80, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
 
           className={stylePreview.PreviewFPart}>
@@ -73,8 +75,8 @@ function AboutMe() {
 
         <motion.div
           viewport={{ once: true }}
-          initial={{ x: 80, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={stylePreview.PreviewSPart}>{/* IMG */}w 500px</motion.div>
       </section>
@@ -116,8 +118,8 @@ function AboutMe() {
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.WorkTypesTitle}>Drop-in</motion.p>
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .4 }}
               viewport={{ once: true }}
               className={styleWork.Line}>
@@ -128,9 +130,9 @@ function AboutMe() {
             </motion.div>
 
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
+              initial={{ y: -50, opacity: 0 }}
               viewport={{ once: true }}
-              whileInView={{ x: 0, opacity: 1 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
@@ -139,8 +141,8 @@ function AboutMe() {
             </motion.div>
 
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
@@ -166,8 +168,8 @@ function AboutMe() {
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.WorkTypesTitle}>Drop-in</motion.p>
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
@@ -178,8 +180,8 @@ function AboutMe() {
             </motion.div>
 
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
@@ -189,9 +191,9 @@ function AboutMe() {
             </motion.div>
 
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
+              initial={{ y: -50, opacity: 0 }}
               viewport={{ once: true }}
-              whileInView={{ x: 0, opacity: 1 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
@@ -216,9 +218,9 @@ function AboutMe() {
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.WorkTypesTitle}>Drop-in</motion.p>
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
+              initial={{ y: -50, opacity: 0 }}
               viewport={{ once: true }}
-              whileInView={{ x: 0, opacity: 1 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
@@ -228,8 +230,8 @@ function AboutMe() {
             </motion.div>
 
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
@@ -239,8 +241,8 @@ function AboutMe() {
             </motion.div>
 
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
@@ -255,15 +257,15 @@ function AboutMe() {
       <section className={styleExample.Example}>
         <motion.div
           viewport={{ once: true }}
-          initial={{ x: -80, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={styleExample.ExampleLPart}>500px</motion.div>
 
         <motion.div
           viewport={{ once: true }}
-          initial={{ x: 80, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={styleExample.ExampleRPart}>
           <p className={styleExample.ExampleRPartTitle}>
@@ -500,9 +502,9 @@ function AboutMe() {
 
       <section className={styleAbout.About}>
         <motion.div
-          initial={{ x: -50, opacity: 0 }}
+          initial={{ y: -50, opacity: 0 }}
           viewport={{ once: true }}
-          whileInView={{ x: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={styleAbout.AboutLPart}>
           <p className={styleAbout.AboutLPartTitle}>About Heather Frazier</p>
@@ -512,9 +514,9 @@ function AboutMe() {
         </motion.div>
 
         <motion.div
-          initial={{ x: 50, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           viewport={{ once: true }}
-          whileInView={{ x: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={styleAbout.AboutRPart}>
           500px
