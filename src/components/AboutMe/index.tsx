@@ -7,7 +7,6 @@ import styleSteps from "./Steps.module.scss";
 import styleWork from "./Work.module.scss";
 import styleAbout from "./About.module.scss";
 import styleExit from "./Exit.module.scss"
-import { disableBodyScroll } from 'body-scroll-lock-upgrade';
 import { useEffect, useRef } from "react";
 
 function AboutMe() {
