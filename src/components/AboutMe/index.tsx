@@ -1,4 +1,4 @@
-// import { motion } from "motion/react"
+import { motion } from "motion/react"
 
 import stylePreview from "./Preview.module.scss";
 import styleExample from "./Example.module.scss";
@@ -12,7 +12,12 @@ function AboutMe() {
   return (
     <section className={stylePreview.AboutMe}>
       <section className={stylePreview.Preview}>
-        <div className={stylePreview.PreviewFPart}>
+        <motion.div
+          initial={{ x: -80, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+
+          className={stylePreview.PreviewFPart}>
           <p className={stylePreview.PreviewFPartTitle}>
             Ready to turn your broken heart into a confident, peaceful one?
           </p>
@@ -29,101 +34,177 @@ function AboutMe() {
           <button className={stylePreview.PreviewFPartBtn}>
             Schedule your free call
           </button>
-        </div>
+        </motion.div>
 
-        <div className={stylePreview.PreviewSPart}>{/* IMG */}w 500px</div>
+        <motion.div
+          initial={{ x: 80, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+          className={stylePreview.PreviewSPart}>{/* IMG */}w 500px</motion.div>
       </section>
 
-      <section className={styleWork.Work}>
-        <p className={styleWork.WorkTitle}>Ways to work with me</p>
-        <p className={styleWork.WorkTitleDesc}>
+      <section
+        className={styleWork.Work}>
+        <motion.p
+          initial={{ y: -80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+
+          className={styleWork.WorkTitle}>Ways to work with me</motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+
+          className={styleWork.WorkTitleDesc}>
           Pick the option that works best for you
-        </p>
+        </motion.p>
 
         <div className={styleWork.WorkTypes}>
           <div className={styleWork.WorkTypesType}>
-            <div className={styleWork.WorkTypesIcon}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+              className={styleWork.WorkTypesIcon}>
               <img src="./heart.svg" alt="heart.svg" />
-            </div>
+            </motion.div>
 
-            <p className={styleWork.WorkTypesTitle}>Drop-in</p>
-            <div className={styleWork.Line}>
+            <motion.p
+              initial={{ y: -10, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.WorkTypesTitle}>Drop-in</motion.p>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" />
               </div>
               <p className={styleWork.LineTitle}>8 or more hours a month of group coaching</p>
-            </div>
+            </motion.div>
 
-            <div className={styleWork.Line}>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
               <p className={styleWork.LineTitle}>No recordings</p>
-            </div>
+            </motion.div>
 
-            <div className={styleWork.Line}>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
               <p className={styleWork.LineTitle}>No contract </p>
-            </div>
-
+            </motion.div>
           </div>
-
           <div className={styleWork.WorkTypesType}>
-            <div className={styleWork.WorkTypesIcon}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+              className={styleWork.WorkTypesIcon}>
               <img src="./heart.svg" alt="heart.svg" />
-            </div>
+            </motion.div>
 
-            <p className={styleWork.WorkTypesTitle}>Confidence</p>
-            <div className={styleWork.Line}>
+            <motion.p
+              initial={{ y: -10, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.WorkTypesTitle}>Drop-in</motion.p>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" />
               </div>
               <p className={styleWork.LineTitle}>8 or more hours a month of group coaching</p>
-            </div>
+            </motion.div>
 
-            <div className={styleWork.Line}>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
               <p className={styleWork.LineTitle}>No recordings</p>
-            </div>
+            </motion.div>
 
-            <div className={styleWork.Line}>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
               <p className={styleWork.LineTitle}>No contract </p>
-            </div>
+            </motion.div>
           </div>
-
           <div className={styleWork.WorkTypesType}>
-            <div className={styleWork.WorkTypesIcon}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+              className={styleWork.WorkTypesIcon}>
               <img src="./heart.svg" alt="heart.svg" />
-            </div>
+            </motion.div>
 
-            <p className={styleWork.WorkTypesTitle}>Empowerment</p>
-            <div className={styleWork.Line}>
+            <motion.p
+              initial={{ y: -10, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.WorkTypesTitle}>Drop-in</motion.p>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" />
               </div>
-              <p className={styleWork.LineTitle}><span>Bonus: </span>Free e-book</p>
-            </div>
+              <p className={styleWork.LineTitle}>8 or more hours a month of group coaching</p>
+            </motion.div>
 
-            <div className={styleWork.Line}>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
-              <p className={styleWork.LineTitle}><span>Bonus: </span>o recordings</p>
-            </div>
+              <p className={styleWork.LineTitle}>No recordings</p>
+            </motion.div>
 
-            <div className={styleWork.Line}>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
-              <p className={styleWork.LineTitle}><span>Bonus: </span>No contract </p>
-            </div>
+              <p className={styleWork.LineTitle}>No contract </p>
+            </motion.div>
           </div>
         </div>
       </section>
 
       <section className={styleExample.Example}>
-        <div className={styleExample.ExampleLPart}>500px</div>
+        <motion.div
+          initial={{ x: 80, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+          className={styleExample.ExampleLPart}>500px</motion.div>
 
         <div className={styleExample.ExampleRPart}>
           <p className={styleExample.ExampleRPartTitle}>
