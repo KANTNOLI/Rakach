@@ -9,10 +9,36 @@ import styleAbout from "./About.module.scss";
 import styleExit from "./Exit.module.scss"
 
 function AboutMe() {
+  const Process = [
+    {
+      span: "Understand how expectations work.",
+      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
+    }, {
+      span: "Understand how expectations work.",
+      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
+    }, {
+      span: "Understand how expectations work.",
+      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
+    }, {
+      span: "Understand how expectations work.",
+      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
+    }, {
+      span: "Understand how expectations work.",
+      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
+    }, {
+      span: "Understand how expectations work.",
+      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
+    }, {
+      span: "Understand how expectations work.",
+      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
+    }
+  ]
+
   return (
     <section className={stylePreview.AboutMe}>
       <section className={stylePreview.Preview}>
         <motion.div
+          viewport={{ once: true }}
           initial={{ x: -80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
@@ -37,24 +63,27 @@ function AboutMe() {
         </motion.div>
 
         <motion.div
+          viewport={{ once: true }}
           initial={{ x: 80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
           className={stylePreview.PreviewSPart}>{/* IMG */}w 500px</motion.div>
       </section>
 
       <section
         className={styleWork.Work}>
         <motion.p
+          viewport={{ once: true }}
           initial={{ y: -80, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
 
           className={styleWork.WorkTitle}>Ways to work with me</motion.p>
         <motion.p
+          viewport={{ once: true }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+          transition={{ ease: "easeInOut", duration: .4 }}
 
           className={styleWork.WorkTitleDesc}>
           Pick the option that works best for you
@@ -65,20 +94,23 @@ function AboutMe() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeInOut", duration: .5 }}
               className={styleWork.WorkTypesIcon}>
               <img src="./heart.svg" alt="heart.svg" />
             </motion.div>
 
             <motion.p
               initial={{ y: -10, opacity: 0 }}
+              viewport={{ once: true }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.WorkTypesTitle}>Drop-in</motion.p>
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              transition={{ ease: "easeInOut", duration: .4 }}
+              viewport={{ once: true }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" />
@@ -88,8 +120,9 @@ function AboutMe() {
 
             <motion.div
               initial={{ x: -50, opacity: 0 }}
+              viewport={{ once: true }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
@@ -99,7 +132,8 @@ function AboutMe() {
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
@@ -110,20 +144,23 @@ function AboutMe() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeInOut", duration: .5 }}
               className={styleWork.WorkTypesIcon}>
               <img src="./heart.svg" alt="heart.svg" />
             </motion.div>
 
             <motion.p
               initial={{ y: -10, opacity: 0 }}
+              viewport={{ once: true }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.WorkTypesTitle}>Drop-in</motion.p>
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" />
@@ -134,7 +171,8 @@ function AboutMe() {
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
@@ -143,8 +181,9 @@ function AboutMe() {
 
             <motion.div
               initial={{ x: -50, opacity: 0 }}
+              viewport={{ once: true }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
@@ -154,8 +193,9 @@ function AboutMe() {
           <div className={styleWork.WorkTypesType}>
             <motion.div
               initial={{ opacity: 0 }}
+              viewport={{ once: true }}
               whileInView={{ opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+              transition={{ ease: "easeInOut", duration: .5 }}
               className={styleWork.WorkTypesIcon}>
               <img src="./heart.svg" alt="heart.svg" />
             </motion.div>
@@ -163,12 +203,14 @@ function AboutMe() {
             <motion.p
               initial={{ y: -10, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.WorkTypesTitle}>Drop-in</motion.p>
             <motion.div
               initial={{ x: -50, opacity: 0 }}
+              viewport={{ once: true }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" />
@@ -179,7 +221,8 @@ function AboutMe() {
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
@@ -189,7 +232,8 @@ function AboutMe() {
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeInOut", delay: 0.1, duration: .4 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeInOut", duration: .4 }}
               className={styleWork.Line}>
               <div className={styleWork.LineCheck}>
                 <img src="./check.svg" alt="check.svg" /></div>
@@ -201,12 +245,18 @@ function AboutMe() {
 
       <section className={styleExample.Example}>
         <motion.div
-          initial={{ x: 80, opacity: 0 }}
+          viewport={{ once: true }}
+          initial={{ x: -80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
           className={styleExample.ExampleLPart}>500px</motion.div>
 
-        <div className={styleExample.ExampleRPart}>
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ x: 80, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleExample.ExampleRPart}>
           <p className={styleExample.ExampleRPartTitle}>
             Something has happened with your teen...
           </p>
@@ -245,152 +295,237 @@ function AboutMe() {
             Better for you on the daily, but even better for how you love and
             help your teen. Which is better for them forever
           </p>
-        </div>
+        </motion.div>
       </section>
 
       <section className={styleProcess.Process}>
-        <p className={styleProcess.ProcessIdea}>The Process</p>
-        <p className={styleProcess.ProcessTitle}>
+        <motion.p
+          initial={{ y: -50, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleProcess.ProcessIdea}>The Process</motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ ease: "easeInOut", duration: .8 }}
+          className={styleProcess.ProcessTitle}>
           It can feel confusing and overwhelming to try and “fix” what you’re
           not even sure is the problem
-        </p>
-        <p className={styleProcess.ProcessDesc}>
+        </motion.p>
+        <motion.p
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleProcess.ProcessDesc}>
           Welcome to my private parent coaching program, 4 months for a better
           forever
-        </p>
+        </motion.p>
 
-        <div
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
           className={`${styleProcess.ProcessStepPart} ${styleProcess.ProcessStepPartFirst}`}
         >
           step 1
-        </div>
-        <p className={styleProcess.ProcessStepDesc}>
+        </motion.div>
+        <motion.p
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+          viewport={{ once: true }}
+          className={styleProcess.ProcessStepDesc}>
           <span>Understand how expectations work.</span> We all have them around
           our kids and usually they’re painful. Let’s fix that and use them to
           your advantage.
-        </p>
-        <div className={styleProcess.customLine}></div>
+        </motion.p>
 
-        <div className={styleProcess.ProcessStepPart}>step 3</div>
-        <p className={styleProcess.ProcessStepDesc}>
-          <span>Love all of yourself.</span> We’re all flawed. Let’s make peace
-          with this fact together.
-        </p>
-        <div className={styleProcess.customLine}></div>
-
-        <div className={styleProcess.ProcessStepPart}>step 4</div>
-        <p className={styleProcess.ProcessStepDesc}>
-          <span>Humility is key. </span> (Stop judging you and them while
-          embracing being wrong) sounds scary but this step is the most
-          liberating and life changing for most clients.
-        </p>
-        <div className={styleProcess.customLine}></div>
-
-        <div className={styleProcess.ProcessStepPart}>step 5</div>
-        <p className={styleProcess.ProcessStepDesc}>
-          <span>Understand how expectations work.</span> We all have them around
-          our kids and usually they’re painful. Let’s fix that and use them to
-          your advantage.
-        </p>
-        <div className={styleProcess.customLine}></div>
-
-        <div className={styleProcess.ProcessStepPart}>step 6</div>
-        <p className={styleProcess.ProcessStepDesc}>
-          <span>Understand how expectations work.</span> We all have them around
-          our kids and usually they’re painful. Let’s fix that and use them to
-          your advantage.
-        </p>
-        <div className={styleProcess.customLine}></div>
-
-        <div className={styleProcess.ProcessStepPart}>step 7</div>
-        <p className={styleProcess.ProcessStepDesc}>
-          <span>Understand how expectations work.</span> We all have them around
-          our kids and usually they’re painful. Let’s fix that and use them to
-          your advantage.
-        </p>
-        <div className={styleProcess.customLine}></div>
-
-        <div className={styleProcess.ProcessStepPart}>step 8</div>
-        <p className={styleProcess.ProcessStepDesc}>
-          <span>Understand how expectations work.</span> We all have them around
-          our kids and usually they’re painful. Let’s fix that and use them to
-          your advantage.
-        </p>
+        {
+          Process.map((o, id) => (
+            <>
+              <motion.div
+                initial={{ height: 0 }}
+                whileInView={{ height: 30 }}
+                transition={{ ease: "easeInOut", duration: .2 }}
+                viewport={{ once: true }}
+                className={styleProcess.customLine}></motion.div>
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ ease: "easeInOut", delay: 0.2, duration: .5 }}
+                className={styleProcess.ProcessStepPart}>step {id + 2}</motion.div>
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                viewport={{ once: true }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ ease: "easeInOut", duration: .5 }}
+                className={styleProcess.ProcessStepDesc}>
+                <span>{o.span}</span> {o.text}
+              </motion.p>
+            </>
+          ))
+        }
       </section>
 
       <section className={styleSteps.Steps}>
-        <p className={styleSteps.StepsTitle}>
+        <motion.p
+          initial={{ y: -50, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleSteps.StepsTitle}>
           When you complete these 8 specific steps,you’ll live in a house where
           there’s...
-        </p>
+        </motion.p>
 
         <div className={styleSteps.StepsTypes}>
           <div className={styleSteps.StepsTypesType}>
-            <div className={styleSteps.StepsTypesIcon}>
+            <motion.div
+              initial={{ y: -50, opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: .5 }}
+              className={styleSteps.StepsTypesIcon}>
               <img src="./home.png" alt="home.png" />
-            </div>
+            </motion.div>
 
-            <p className={styleSteps.StepsTypesTitle}>Connection</p>
-            <p className={styleSteps.StepsTypesDesc}>
-              There’s more time to focus on what matters most: Your love and
-              connection as a family.
-            </p>
-          </div>
-
-          <div className={styleSteps.StepsTypesType}>
-            <div className={styleSteps.StepsTypesIcon}>
-              <img src="./home.png" alt="home.png" />
-            </div>
-
-            <p className={styleSteps.StepsTypesTitle}>Confidence</p>
-            <p className={styleSteps.StepsTypesDesc}>
+            <motion.p
+              initial={{ opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: .8 }}
+              className={styleSteps.StepsTypesTitle}>Connection</motion.p>
+            <motion.p
+              initial={{ y: 50, opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: .5 }}
+              className={styleSteps.StepsTypesDesc}>
               There is no more wondering where you went wrong or if your
               children will have a quality adult life. You’ll have confidence in
               yourself as a parent and for the future like never before.
-            </p>
+            </motion.p>
           </div>
 
           <div className={styleSteps.StepsTypesType}>
-            <div className={styleSteps.StepsTypesIcon}>
+            <motion.div
+              initial={{ y: -50, opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: .5 }}
+              className={styleSteps.StepsTypesIcon}>
               <img src="./home.png" alt="home.png" />
-            </div>
+            </motion.div>
 
-            <p className={styleSteps.StepsTypesTitle}>Empowerment</p>
-            <p className={styleSteps.StepsTypesDesc}>
-              The situations you're struggling with now and those in the future
-              will no longer dictate your emotions, quality of connections with
-              your kids… and yes, even mental health challenges for both of you!
-            </p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: .8 }}
+              className={styleSteps.StepsTypesTitle}>Connection</motion.p>
+            <motion.p
+              initial={{ y: 50, opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: .5 }}
+              className={styleSteps.StepsTypesDesc}>
+              There is no more wondering where you went wrong or if your
+              children will have a quality adult life. You’ll have confidence in
+              yourself as a parent and for the future like never before.
+            </motion.p>
+          </div>
+
+          <div className={styleSteps.StepsTypesType}>
+            <motion.div
+              initial={{ y: -50, opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: .5 }}
+              className={styleSteps.StepsTypesIcon}>
+              <img src="./home.png" alt="home.png" />
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: .8 }}
+              className={styleSteps.StepsTypesTitle}>Connection</motion.p>
+            <motion.p
+              initial={{ y: 50, opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: .5 }}
+              className={styleSteps.StepsTypesDesc}>
+              There is no more wondering where you went wrong or if your
+              children will have a quality adult life. You’ll have confidence in
+              yourself as a parent and for the future like never before.
+            </motion.p>
           </div>
         </div>
-        <p className={styleSteps.StepsDesc}>
+        <motion.p
+          initial={{ y: -50, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleSteps.StepsDesc}>
           Nothing will intimidate you or make you feel powerless as a parent
           ever again.
           <div className={styleSteps.customLine}>{"   "}</div>
-        </p>
+        </motion.p>
 
-        <button className={styleSteps.StepsBtn}>Book your free call</button>
+        <motion.button
+          initial={{ opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleSteps.StepsBtn}>Book your free call</motion.button>
       </section>
 
       <section className={styleAbout.About}>
-        <div className={styleAbout.AboutLPart}>
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleAbout.AboutLPart}>
           <p className={styleAbout.AboutLPartTitle}>About Heather Frazier</p>
 
           <p className={styleAbout.AboutLPartDesc}>Known as the Teen Whisperer, I’m author of a best-selling book, “How I Fixed My Teen,” host of the 5 star podcast Pivot Parenting, was a six-month guest on ABC4’s highly rated daytime show Good Things Utah, published in Holistic Life magazine, and I’m the authority you’ve been looking for. My expertise is rooted in transformative coaching philosophies learned through certification at The Life Coach School, advanced trauma certification, and Jody Moore’s advancАed faith-based certification.</p>
           <p className={styleAbout.AboutLPartDesc}>In addition to being a dedicated mother of four, I’m an active member of the Church of Jesus Christ of Latter-day Saints. I love to inspire and guide parents, and am an invaluable resource for smooth navigation of parenting complexities during the teenage years.</p>
-        </div>
+        </motion.div>
 
-        <div className={styleAbout.AboutRPart}>
+        <motion.div
+          initial={{ x: 50, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleAbout.AboutRPart}>
           500px
-        </div>
+        </motion.div>
       </section>
 
       <section className={styleExit.Exit}>
-        <p className={styleExit.ExitTitle}>There’s no more convenient time to do this, and there’s no better time to secure the future you’ve dreamed of.</p>
+        <motion.p
+          initial={{ y: -50, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleExit.ExitTitle}>There’s no more convenient time to do this, and there’s no better time to secure the future you’ve dreamed of.</motion.p>
 
-        <button className={styleExit.ExitBtn}>
+        <motion.button
+          initial={{ opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleExit.ExitBtn}>
           Schedule your free call
-        </button>
+        </motion.button>
       </section>
 
     </section>
