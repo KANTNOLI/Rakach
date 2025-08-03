@@ -33,15 +33,19 @@ function Header({ page }: props) {
     useEffect(() => {
         setMobileMenu(false)
         console.log(1);
-        
-        if (pageAboutMe.current && ActivePAge.current && Pages[page]) {
-        console.log(2);
-            const HalfPageText = Pages[page].current.getBoundingClientRect().width / 2
-            const LeftPageText = Pages[page].current.getBoundingClientRect().left - 25
 
-            ActivePAge.current.style.left = `${LeftPageText + HalfPageText}px`
-            console.log();
-        }
+        setTimeout(() => {
+
+            if (pageAboutMe.current && ActivePAge.current && Pages[page]) {
+                console.log(2);
+                const HalfPageText = Pages[page].current.getBoundingClientRect().width / 2
+                const LeftPageText = Pages[page].current.getBoundingClientRect().left - 25
+
+                ActivePAge.current.style.left = `${LeftPageText + HalfPageText}px`
+                console.log();
+            }
+
+        },100);
 
     }, [page])
 
