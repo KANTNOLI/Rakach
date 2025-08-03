@@ -2,7 +2,9 @@ import { Route, Routes, useLocation } from "react-router"
 import Header from "./components/Header"
 import { useEffect, useState } from "react"
 import AboutMe from "./components/AboutMe";
-import { disableBodyScroll } from "body-scroll-lock";
+import {
+  disableBodyScroll,
+} from 'body-scroll-lock-upgrade';
 
 function App() {
   const location = useLocation()
