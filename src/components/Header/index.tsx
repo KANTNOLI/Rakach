@@ -1,15 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
+import { useEffect, useRef, useState } from 'react';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import { motion } from "motion/react"
 import { Link } from 'react-router';
 
 import style from "./Header.module.scss"
-import { useEffect, useRef, useState } from 'react';
 
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 interface props {
     page: string
 }
+
+//   initial={{ y: -100, opacity: 0 }}
+//   whileInView={{ y: 0, opacity: 1 }}
+//   transition={{ type: "spring", stiffness: 100 }}
 
 function Header({ page }: props) {
     const pageAboutMe = useRef<HTMLAnchorElement>(null)
@@ -45,7 +49,7 @@ function Header({ page }: props) {
                 console.log();
             }
 
-        },100);
+        }, 100);
 
     }, [page])
 
@@ -62,10 +66,37 @@ function Header({ page }: props) {
     return (
         <section className={style.Header}>
             <nav ref={Nav} className={`${style.HeaderNavigate} ${MobileMenu ? "" : style.HeaderOff}`}>
-                <Link ref={pageAboutMe} to="Rakach/" className={style.HeaderNavigatePage} draggable="false">About Me</Link>
-                <Link ref={pageA} to="Rakach/a" className={style.HeaderNavigatePage} draggable="false">What Coaching Looks Like</Link>
-                <Link ref={pageB} to="Rakach/b" className={style.HeaderNavigatePage} draggable="false">Solutions</Link>
-                <Link ref={pageC} to="Rakach/c" className={style.HeaderNavigatePage} draggable="false">Request a free coaching session</Link>
+                <Link ref={pageAboutMe} to="Rakach/" className={style.HeaderNavigatePage} draggable="false">
+                    <motion.p
+                        initial={{ y: -50, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ ease: "easeInOut", duration: .5 }}
+                    >
+                        About Me
+                    </motion.p>
+                </Link>
+                <Link ref={pageA} to="Rakach/a" className={style.HeaderNavigatePage} draggable="false">
+                    <motion.p
+                        initial={{ y: -50, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
+                    >
+                        What Coaching Looks Like
+                    </motion.p></Link>
+                <Link ref={pageB} to="Rakach/b" className={style.HeaderNavigatePage} draggable="false"><motion.p
+                    initial={{ y: -50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ ease: "easeInOut", delay: 0.2, duration: .5 }}
+                >
+                    Solutions
+                </motion.p></Link>
+                <Link ref={pageC} to="Rakach/c" className={style.HeaderNavigatePage} draggable="false"> <motion.p
+                    initial={{ y: -50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ ease: "easeInOut", delay: 0.3, duration: .5 }}
+                >
+                    Request a free coaching session
+                </motion.p></Link>
 
                 <div ref={ActivePAge} className={style.HeaderNavigateActivePageBox}>
                     <p className={style.HeaderNavigateActivePage}></p>
