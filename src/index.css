@@ -6,6 +6,11 @@
   font-family: Sen, sans-serif;
 }
 
+body {
+  overflow-x: hidden; /* Запрещаем горизонтальный скроллинг */
+  position: fixed; /* Фиксируем позицию */
+}
+
 *::-webkit-scrollbar {
   width: 5px;
 }
@@ -22,5 +27,3 @@
 li {
   list-style-position: inside;
 }
-
-/* // background-color: #969A71; */
