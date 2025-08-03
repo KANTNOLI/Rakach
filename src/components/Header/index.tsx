@@ -104,12 +104,30 @@ function Header({ page }: props) {
             </nav>
 
             <div onClick={() => setMobileMenu(before => !before)} className={MobileMenu ? style.menuActive : style.menu}>
-                <p className={MobileMenu ? style.menuP1 : ""}></p>
-                <p className={MobileMenu ? style.menuP2 : ""}></p>
-                <p className={MobileMenu ? style.menuP3 : ""}></p>
+                <motion.p
+                    initial={{ width: 0 }}
+                    animate={{ width: 40 }}
+                    transition={{ ease: "easeInOut", duration: .2 }}
+
+                    className={MobileMenu ? style.menuP1 : ""}></motion.p>
+                <motion.p
+                    initial={{ width: 0 }}
+                    animate={{ width: MobileMenu ? 0 : 40 }}
+                    transition={{ ease: "easeOut", duration: 0.2 }}
+                    className={style.menuP2}
+                />
+
+                <motion.p
+                    initial={{ width: 0 }}
+                    animate={{ width: 40 }}
+                    transition={{ ease: "easeInOut", duration: .2 }}
+
+                    className={MobileMenu ? style.menuP3 : ""}></motion.p>
             </div>
         </section>
     )
 }
+
+
 
 export default Header
