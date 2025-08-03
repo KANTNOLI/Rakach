@@ -1,4 +1,4 @@
-import { motion } from "motion/react"
+// import { motion } from "motion/react"
 
 import stylePreview from "./Preview.module.scss";
 import styleExample from "./Example.module.scss";
