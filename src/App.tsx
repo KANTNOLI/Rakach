@@ -2,6 +2,7 @@ import { Route, Routes, useLocation } from "react-router"
 import Header from "./components/Header"
 import { useEffect, useState } from "react"
 import AboutMe from "./components/AboutMe";
+import { disableBodyScroll } from "body-scroll-lock";
 
 function App() {
   const location = useLocation()
@@ -13,7 +14,8 @@ function App() {
 
 
   useEffect(() => {
-    document.body.style.overflowX = 'hidden';
+
+    disableBodyScroll(document.body);
 
     const path = location.pathname;
     const currentPage = path.split('/').filter(Boolean).pop() || "Rakach";
