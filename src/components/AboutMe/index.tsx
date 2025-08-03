@@ -4,6 +4,7 @@ import styleProcess from "./Process.module.scss";
 import styleSteps from "./Steps.module.scss";
 import styleWork from "./Work.module.scss";
 import styleAbout from "./About.module.scss";
+import styleExit from "./Exit.module.scss"
 
 function AboutMe() {
   return (
@@ -301,6 +302,13 @@ function AboutMe() {
         </div>
       </section>
 
+      <section className={styleExit.Exit}>
+        <p className={styleExit.ExitTitle}>There’s no more convenient time to do this, and there’s no better time to secure the future you’ve dreamed of.</p>
+
+        <button className={styleExit.ExitBtn}>
+          Schedule your free call
+        </button>
+      </section>
 
     </section>
   );
