@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef, useState } from 'react';
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';
 import { motion } from "motion/react"
 import { Link } from 'react-router';
 
@@ -95,7 +95,7 @@ function Header({ page }: props) {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut", delay: 0.3, duration: .5 }}
                 >
-                    Request a free coaching session
+                    Via google meet
                 </motion.p></Link>
 
                 <div ref={ActivePAge} className={style.HeaderNavigateActivePageBox}>
