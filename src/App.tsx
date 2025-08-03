@@ -13,13 +13,16 @@ function App() {
 
 
   useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+
     const path = location.pathname;
     const currentPage = path.split('/').filter(Boolean).pop() || "Rakach";
-    
+
     console.log(currentPage);
-    
+
     setPagePosition(currentPage);
   }, [location])
+
 
 
 
