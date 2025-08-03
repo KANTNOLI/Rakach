@@ -481,10 +481,12 @@ function AboutMe() {
 
         <motion.button
           initial={{ opacity: 0 }}
-          viewport={{ once: true }}
           whileInView={{ opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: .5 }}
-          className={styleSteps.StepsBtn}>Book your free call</motion.button>
+          transition={{ duration: .5 }}
+          viewport={{ once: true }}
+          className={styleSteps.StepsBtn}>
+          Book your free call
+        </motion.button>
       </section>
 
       <section className={styleAbout.About}>
