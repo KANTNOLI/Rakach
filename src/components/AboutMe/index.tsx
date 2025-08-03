@@ -1,7 +1,5 @@
 import { motion } from "motion/react"
 
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock-upgrade';
-
 import stylePreview from "./Preview.module.scss";
 import styleExample from "./Example.module.scss";
 import styleProcess from "./Process.module.scss";
@@ -9,7 +7,7 @@ import styleSteps from "./Steps.module.scss";
 import styleWork from "./Work.module.scss";
 import styleAbout from "./About.module.scss";
 import styleExit from "./Exit.module.scss"
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 function AboutMe() {
   const Process = [
@@ -37,13 +35,13 @@ function AboutMe() {
     }
   ]
 
-  useEffect(() => {
-    const body = document.body;
-    body.style.overflowX = 'hidden'; // Запрещаем горизонтальную прокрутку
+  // useEffect(() => {
+  //   const body = document.body;
+  //   body.style.overflowX = 'hidden'; // Запрещаем горизонтальную прокрутку
 
-    // Запрещаем прокрутку тела
-    disableBodyScroll(body);
-  }, [])
+  //   // Запрещаем прокрутку тела
+  //   disableBodyScroll(body);
+  // }, [])
 
   return (
     <section className={stylePreview.AboutMe}>
