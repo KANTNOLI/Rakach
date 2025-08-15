@@ -1,10 +1,10 @@
 import { motion } from "motion/react"
 
 import stylePreview from "./Preview.module.scss";
-import styleExample from "./Example.module.scss";
-import styleProcess from "./Process.module.scss";
+// import styleExample from "./Example.module.scss";
+// import styleProcess from "./Process.module.scss";
 import styleSteps from "./Steps.module.scss";
-import styleWork from "./Work.module.scss";
+// import styleWork from "./Work.module.scss";
 import styleAbout from "./About.module.scss";
 import styleExit from "./Exit.module.scss"
 import { useEffect, useRef } from "react";
