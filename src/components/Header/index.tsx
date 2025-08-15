@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef, useState } from 'react';
-import { disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import { motion } from "motion/react"
 import { Link } from 'react-router';
 
@@ -20,6 +20,7 @@ function Header({ page }: props) {
     const pageA = useRef<HTMLAnchorElement>(null)
     const pageB = useRef<HTMLAnchorElement>(null)
     const pageC = useRef<HTMLAnchorElement>(null)
+    const pageD = useRef<HTMLAnchorElement>(null)
 
     const ActivePAge = useRef<HTMLParagraphElement>(null)
     const Nav = useRef<HTMLParagraphElement>(null)
@@ -31,6 +32,7 @@ function Header({ page }: props) {
         "a": pageA,
         "b": pageB,
         "c": pageC,
+        "d": pageD,
     }
 
 
@@ -81,21 +83,30 @@ function Header({ page }: props) {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
                     >
-                        What Coaching Looks Like
+                        Solutions
                     </motion.p></Link>
-                <Link ref={pageB} to="Rakach/b" className={style.HeaderNavigatePage} draggable="false"><motion.p
-                    initial={{ y: -50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ ease: "easeInOut", delay: 0.2, duration: .5 }}
-                >
-                    Solutions
-                </motion.p></Link>
+                <Link ref={pageB} to="Rakach/b" className={style.HeaderNavigatePage} draggable="false">
+                    <motion.p
+                        initial={{ y: -50, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ ease: "easeInOut", delay: 0.2, duration: .5 }}
+                    >
+                        How it works
+                    </motion.p></Link>
                 <Link ref={pageC} to="Rakach/c" className={style.HeaderNavigatePage} draggable="false"> <motion.p
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut", delay: 0.3, duration: .5 }}
                 >
-                    Via google meet
+                    Individual Coaching
+                </motion.p></Link>
+
+                <Link ref={pageD} to="Rakach/d" className={style.HeaderNavigatePage} draggable="false"> <motion.p
+                    initial={{ y: -50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ ease: "easeInOut", delay: 0.4, duration: .5 }}
+                >
+                    Request a free coaching session
                 </motion.p></Link>
 
                 <div ref={ActivePAge} className={style.HeaderNavigateActivePageBox}>
