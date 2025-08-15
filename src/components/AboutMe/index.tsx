@@ -2,45 +2,20 @@ import { motion } from "motion/react"
 
 import stylePreview from "./Preview.module.scss";
 import styleExample from "./Example.module.scss";
-import styleProcess from "./Process.module.scss";
 import styleSteps from "./Steps.module.scss";
 import styleWork from "./Work.module.scss";
 import styleAbout from "./About.module.scss";
 import styleExit from "./Exit.module.scss"
+
 import { useEffect, useRef } from "react";
 
 function AboutMe() {
-  const Process = [
-    {
-      span: "Understand how expectations work.",
-      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
-    }, {
-      span: "Understand how expectations work.",
-      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
-    }, {
-      span: "Understand how expectations work.",
-      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
-    }, {
-      span: "Understand how expectations work.",
-      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
-    }, {
-      span: "Understand how expectations work.",
-      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
-    }, {
-      span: "Understand how expectations work.",
-      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
-    }, {
-      span: "Understand how expectations work.",
-      text: "We all have them around our kids and usually they’re painful. Let’s fix that and use them to your advantage.",
-    }
-  ]
-
   const body = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    
-    if(body.current){
-    //  disableBodyScroll(body.current);
+
+    if (body.current) {
+      //  disableBodyScroll(body.current);
     }
   }, [])
 
@@ -306,80 +281,6 @@ function AboutMe() {
             help your teen. Which is better for them forever
           </p>
         </motion.div>
-      </section>
-
-      <section className={styleProcess.Process}>
-        <motion.p
-          initial={{ y: -50, opacity: 0 }}
-          viewport={{ once: true }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: .5 }}
-          className={styleProcess.ProcessIdea}>The Process</motion.p>
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ ease: "easeInOut", duration: .8 }}
-          className={styleProcess.ProcessTitle}>
-          It can feel confusing and overwhelming to try and “fix” what you’re
-          not even sure is the problem
-        </motion.p>
-        <motion.p
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ ease: "easeInOut", duration: .5 }}
-          className={styleProcess.ProcessDesc}>
-          Welcome to my private parent coaching program, 4 months for a better
-          forever
-        </motion.p>
-
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          viewport={{ once: true }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
-          className={`${styleProcess.ProcessStepPart} ${styleProcess.ProcessStepPartFirst}`}
-        >
-          step 1
-        </motion.div>
-        <motion.p
-          initial={{ y: 20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
-          viewport={{ once: true }}
-          className={styleProcess.ProcessStepDesc}>
-          <span>Understand how expectations work.</span> We all have them around
-          our kids and usually they’re painful. Let’s fix that and use them to
-          your advantage.
-        </motion.p>
-
-        {
-          Process.map((o, id) => (
-            <>
-              <motion.div
-                initial={{ height: 0 }}
-                whileInView={{ height: 30 }}
-                transition={{ ease: "easeInOut", duration: .2 }}
-                viewport={{ once: true }}
-                className={styleProcess.customLine}></motion.div>
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ ease: "easeInOut", delay: 0.2, duration: .5 }}
-                className={styleProcess.ProcessStepPart}>step {id + 2}</motion.div>
-              <motion.p
-                initial={{ y: 20, opacity: 0 }}
-                viewport={{ once: true }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ ease: "easeInOut", duration: .5 }}
-                className={styleProcess.ProcessStepDesc}>
-                <span>{o.span}</span> {o.text}
-              </motion.p>
-            </>
-          ))
-        }
       </section>
 
       <section className={styleSteps.Steps}>
