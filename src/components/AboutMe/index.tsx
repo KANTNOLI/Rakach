@@ -2,14 +2,15 @@ import { motion } from "motion/react"
 
 import stylePreview from "./Preview.module.scss";
 import styleExample from "./Example.module.scss";
+import styleProcess from "./Process.module.scss";
 import styleSteps from "./Steps.module.scss";
 import styleWork from "./Work.module.scss";
 import styleAbout from "./About.module.scss";
 import styleExit from "./Exit.module.scss"
-
 import { useEffect, useRef } from "react";
 
 function AboutMe() {
+
   const body = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -24,23 +25,23 @@ function AboutMe() {
       <section className={stylePreview.Preview}>
         <motion.div
           viewport={{ once: true }}
-          initial={{ y: -80, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ x: -80, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", delay: 0.1, duration: .5 }}
 
           className={stylePreview.PreviewFPart}>
           <p className={stylePreview.PreviewFPartTitle}>
-            Ready to turn your broken heart into a confident, peaceful one?
+            Struggling with team effectiveness in your organization?
           </p>
           <p className={stylePreview.PreviewFPartTitleDesc}>
-            Grab your 30 minutes with me now and lets get started.
-          </p>{" "}
+            Book a consultation to explore your team’s challenges
+          </p>
           <div className={stylePreview.customLine}></div>
           <p className={stylePreview.PreviewFPartDesc}>
-            Invest 16 hours over the next 4 months, and you’ll gain
+            We will work together to enhance your team’s dynamics
           </p>
           <p className={stylePreview.PreviewFPartDesc}>
-            350,000 future hours infinitely better spent with your family.
+            Let’s start improving collaboration and performance
           </p>
           <button className={stylePreview.PreviewFPartBtn}>
             Schedule your free call
@@ -49,13 +50,16 @@ function AboutMe() {
 
         <motion.div
           viewport={{ once: true }}
-          initial={{ y: 80, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ x: 80, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
-          className={stylePreview.PreviewSPart}>{/* IMG */}w 500px</motion.div>
+          className={stylePreview.PreviewSPart}>
+          <img src="./SM2.jpg" alt="" />
+        </motion.div>
       </section>
 
-      <section
+      {/* tabls1 */}
+      {/* <section
         className={styleWork.Work}>
         <motion.p
           viewport={{ once: true }}
@@ -226,9 +230,11 @@ function AboutMe() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className={styleExample.Example}>
+
+      {/* idk */}
+      {/* <section className={styleExample.Example}>
         <motion.div
           viewport={{ once: true }}
           initial={{ y: -80, opacity: 0 }}
@@ -281,8 +287,9 @@ function AboutMe() {
             help your teen. Which is better for them forever
           </p>
         </motion.div>
-      </section>
+      </section> */}
 
+      {/* tabls2 */}
       <section className={styleSteps.Steps}>
         <motion.p
           initial={{ y: -50, opacity: 0 }}
@@ -290,8 +297,7 @@ function AboutMe() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={styleSteps.StepsTitle}>
-          When you complete these 8 specific steps,you’ll live in a house where
-          there’s...
+          When you implement these key strategies, your team will flourish in an environment where
         </motion.p>
 
         <div className={styleSteps.StepsTypes}>
@@ -310,16 +316,14 @@ function AboutMe() {
               viewport={{ once: true }}
               whileInView={{ opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .8 }}
-              className={styleSteps.StepsTypesTitle}>Connection</motion.p>
+              className={styleSteps.StepsTypesTitle}>Collaboration</motion.p>
             <motion.p
               initial={{ y: 50, opacity: 0 }}
               viewport={{ once: true }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .5 }}
               className={styleSteps.StepsTypesDesc}>
-              There is no more wondering where you went wrong or if your
-              children will have a quality adult life. You’ll have confidence in
-              yourself as a parent and for the future like never before.
+              There is no more wondering how to improve teamwork. You’ll have confidence in your team’s ability to collaborate effectively and achieve shared goals like never before
             </motion.p>
           </div>
 
@@ -338,16 +342,14 @@ function AboutMe() {
               viewport={{ once: true }}
               whileInView={{ opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .8 }}
-              className={styleSteps.StepsTypesTitle}>Connection</motion.p>
+              className={styleSteps.StepsTypesTitle}>Leadership</motion.p>
             <motion.p
               initial={{ y: 50, opacity: 0 }}
               viewport={{ once: true }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .5 }}
               className={styleSteps.StepsTypesDesc}>
-              There is no more wondering where you went wrong or if your
-              children will have a quality adult life. You’ll have confidence in
-              yourself as a parent and for the future like never before.
+              There is no more questioning your leadership skills. You’ll develop the confidence and strategies to lead your team to success and inspire them to reach new heights
             </motion.p>
           </div>
 
@@ -366,16 +368,14 @@ function AboutMe() {
               viewport={{ once: true }}
               whileInView={{ opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .8 }}
-              className={styleSteps.StepsTypesTitle}>Connection</motion.p>
+              className={styleSteps.StepsTypesTitle}>Growth</motion.p>
             <motion.p
               initial={{ y: 50, opacity: 0 }}
               viewport={{ once: true }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: .5 }}
               className={styleSteps.StepsTypesDesc}>
-              There is no more wondering where you went wrong or if your
-              children will have a quality adult life. You’ll have confidence in
-              yourself as a parent and for the future like never before.
+              There is no more uncertainty about your team’s future. You’ll foster an environment of growth and learning, leading to unprecedented team performance and satisfaction
             </motion.p>
           </div>
         </div>
@@ -391,8 +391,8 @@ function AboutMe() {
         </motion.p>
 
         <motion.button
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: .5 }}
           viewport={{ once: true }}
           className={styleSteps.StepsBtn}>
@@ -402,25 +402,29 @@ function AboutMe() {
 
       <section className={styleAbout.About}>
         <motion.div
-          initial={{ y: -50, opacity: 0 }}
+          initial={{ x: -80, opacity: 0 }}
           viewport={{ once: true }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: .5 }}
-          className={styleAbout.AboutLPart}>
-          <p className={styleAbout.AboutLPartTitle}>About Heather Frazier</p>
-
-          <p className={styleAbout.AboutLPartDesc}>Known as the Teen Whisperer, I’m author of a best-selling book, “How I Fixed My Teen,” host of the 5 star podcast Pivot Parenting, was a six-month guest on ABC4’s highly rated daytime show Good Things Utah, published in Holistic Life magazine, and I’m the authority you’ve been looking for. My expertise is rooted in transformative coaching philosophies learned through certification at The Life Coach School, advanced trauma certification, and Jody Moore’s advancАed faith-based certification.</p>
-          <p className={styleAbout.AboutLPartDesc}>In addition to being a dedicated mother of four, I’m an active member of the Church of Jesus Christ of Latter-day Saints. I love to inspire and guide parents, and am an invaluable resource for smooth navigation of parenting complexities during the teenage years.</p>
-        </motion.div>
-
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          viewport={{ once: true }}
-          whileInView={{ y: 0, opacity: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={styleAbout.AboutRPart}>
-          500px
+          <img src="./SM1.jpg" alt="" />
         </motion.div>
+        <motion.div
+          initial={{ x: 80, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: .5 }}
+          className={styleAbout.AboutLPart}>
+          <p className={styleAbout.AboutLPartTitle}>About Maria Rakach</p>
+
+          <p className={styleAbout.AboutLPartDesc}>Despite a long and rewarding career in the fast-paced financial sector, I chose to work where business and education meet—a space where experience and knowledge come together to create meaningful change. My work in Higher Education, supporting some of the brightest minds from more than 20 countries, has shown me something surprising: even the most intelligent, talented individuals can struggle to form highly effective teams. And that’s where I come in</p>
+
+          <p className={styleAbout.AboutLPartDesc}>Team coaching has become my passion because I’ve seen how diversity of thought, when paired with clear purpose, trust, and collaboration, can transform performance. I work both with individuals and multicultural teams—whether in academia, business, or beyond—to turn differences into strengths, move from obstacles to opportunities, and align on shared goals and values.</p>
+
+          <p className={styleAbout.AboutLPartDesc}>My approach blends leadership development, communication strategies, and cultural awareness to build teams that are proactive, connected, and inspired to achieve more together than they ever could alone. No matter the setting, I believe extraordinary results come when independence and interdependence are in balance, and every member knows both their purpose and their contribution.</p>
+        </motion.div>
+
+
       </section>
 
       <section className={styleExit.Exit}>
@@ -429,12 +433,12 @@ function AboutMe() {
           viewport={{ once: true }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
-          className={styleExit.ExitTitle}>There’s no more convenient time to do this, and there’s no better time to secure the future you’ve dreamed of.</motion.p>
+          className={styleExit.ExitTitle}>There’s no better time than now to enhance your team’s performance and build a strong foundation for future success</motion.p>
 
         <motion.button
-          initial={{ opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           viewport={{ once: true }}
-          whileInView={{ opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={styleExit.ExitBtn}>
           Schedule your free call

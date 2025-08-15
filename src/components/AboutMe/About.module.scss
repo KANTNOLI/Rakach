@@ -9,7 +9,7 @@
 
   .AboutLPart {
     width: 500px;
-    height: 500px;
+    height: auto;
 
     .AboutLPartTitle {
       width: 100%;
@@ -30,8 +30,11 @@
 
   .AboutRPart {
     width: 500px;
-    height: 600px;
-    background-color: rgba(255, 0, 0, 0.249);
+    height: auto;
+
+    img{
+      width: 100%;
+    }
   }
 }
 
