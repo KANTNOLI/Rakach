@@ -54,7 +54,7 @@ function AboutMe() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={stylePreview.PreviewSPart}>
-          <img src="./SM2.jpg" alt="" />
+          <img src="./SM2.webp" alt="" />
         </motion.div>
       </section>
 
@@ -407,7 +407,7 @@ function AboutMe() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: .5 }}
           className={styleAbout.AboutRPart}>
-          <img src="./SM1.jpg" alt="" />
+          <img src="./SM1.webp" alt="" />
         </motion.div>
         <motion.div
           initial={{ x: 80, opacity: 0 }}
