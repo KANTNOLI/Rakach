@@ -31,7 +31,7 @@ function Header({ page }: props) {
         "Rakach": pageAboutMe,
         "a": pageA,
         "b": pageB,
-        "c": pageC,
+        "IndividualCoaching": pageC,
         "d": pageD,
     }
 
@@ -93,7 +93,7 @@ function Header({ page }: props) {
                     >
                         How it works
                     </motion.p></Link>
-                <Link ref={pageC} to="Rakach/c" className={style.HeaderNavigatePage} draggable="false"> <motion.p
+                <Link ref={pageC} to="Rakach/IndividualCoaching" className={style.HeaderNavigatePage} draggable="false"> <motion.p
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut", delay: 0.3, duration: .5 }}
