@@ -32,7 +32,7 @@
     width: 500px;
     height: auto;
 
-    img{
+    img {
       width: 100%;
     }
   }
@@ -54,7 +54,7 @@
       height: 500px;
 
       .AboutLPartTitle {
-      width: 100%;
+        width: 100%;
         line-height: 40px;
         font-size: 45px;
         font-family: Cormorant Garamond;
@@ -91,10 +91,10 @@
     .AboutLPart {
       margin-top: 50px;
       width: 100%;
-      height: 500px;
+      height: auto;
 
       .AboutLPartTitle {
-      width: 100%;
+        width: 100%;
         line-height: 40px;
         font-size: 45px;
         font-family: Cormorant Garamond;
@@ -111,9 +111,10 @@
     }
 
     .AboutRPart {
+      margin-top: 50px;
       width: 100%;
-      height: 600px;
-      background-color: rgba(255, 0, 0, 0.249);
+      height: auto;
+      background-color: rgba(255, 0, 0, 0);
     }
   }
 }
