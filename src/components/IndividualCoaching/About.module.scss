@@ -1,0 +1,120 @@
+.About {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 150px;
+  width: 1100px;
+  height: auto;
+
+  .AboutLPart {
+    width: 500px;
+    height: auto;
+
+    .AboutLPartTitle {
+      width: 100%;
+      line-height: 40px;
+      font-size: 45px;
+      font-family: Cormorant Garamond;
+      font-weight: bold;
+      color: #29595e;
+    }
+
+    .AboutLPartDesc {
+      line-height: 25px;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #343434;
+    }
+  }
+
+  .AboutRPart {
+    width: 500px;
+    height: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .About {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    margin-top: 150px;
+    width: 90%;
+    height: auto;
+
+    .AboutLPart {
+      margin-top: 50px;
+      width: 500px;
+      height: 500px;
+
+      .AboutLPartTitle {
+        width: 100%;
+        line-height: 40px;
+        font-size: 45px;
+        font-family: Cormorant Garamond;
+        font-weight: bold;
+        color: #29595e;
+      }
+
+      .AboutLPartDesc {
+        line-height: 25px;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #343434;
+      }
+    }
+
+    .AboutRPart {
+      width: 500px;
+      height: 600px;
+      background-color: rgba(255, 0, 0, 0.249);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .About {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    margin-top: 150px;
+    width: 90%;
+    height: auto;
+
+    .AboutLPart {
+      margin-top: 50px;
+      width: 100%;
+      height: auto;
+
+      .AboutLPartTitle {
+        width: 100%;
+        line-height: 40px;
+        font-size: 45px;
+        font-family: Cormorant Garamond;
+        font-weight: bold;
+        color: #29595e;
+      }
+
+      .AboutLPartDesc {
+        line-height: 25px;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #343434;
+      }
+    }
+
+    .AboutRPart {
+      margin-top: 50px;
+      width: 100%;
+      height: auto;
+      background-color: rgba(255, 0, 0, 0);
+    }
+  }
+}
