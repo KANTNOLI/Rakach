@@ -34,7 +34,7 @@ function App() {
 
         <Route path="/Rakach/a" element={<p>test a</p>} />
         <Route path="/Rakach/b" element={<p>test b</p>} />
-        <Route path="/Rakach/c" element={<p>test c</p>} />
+        <Route path="/Rakach/IndividualCoaching" element={<p>IndividualCoaching</p>} />
 
         <Route path="*" element={<p>Error</p>} />
       </Routes>
