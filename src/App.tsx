@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import AboutMe from "./components/AboutMe";
 import IndividualCoaching from "./components/IndividualCoaching";
 import HowWorks from "./components/HowWorks";
+import Solutions from "./components/Solutions";
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
       <Routes>
         <Route path="/Rakach/" element={<AboutMe />} />
 
-        <Route path="/Rakach/a" element={<p>test a</p>} />
+        <Route path="/Rakach/Solutions" element={<Solutions />} />
         <Route path="/Rakach/HowWorks" element={<HowWorks />} />
         <Route path="/Rakach/IndividualCoaching" element={<IndividualCoaching />} />
 
