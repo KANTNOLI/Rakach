@@ -6,28 +6,19 @@ import IndividualCoaching from "./components/IndividualCoaching";
 import HowWorks from "./components/HowWorks";
 import Solutions from "./components/Solutions";
 
-
 function App() {
   const location = useLocation()
-
   const path = location.pathname;
   const currentPage = path.split('/').filter(Boolean).pop() || "Rakach";
 
   const [PagePosition, setPagePosition] = useState<string>(currentPage || "Rakach")
 
-
   useEffect(() => {
-
     const path = location.pathname;
     const currentPage = path.split('/').filter(Boolean).pop() || "Rakach";
 
-    console.log(currentPage);
-
     setPagePosition(currentPage);
   }, [location])
-
-
-
 
   return (
     <>
@@ -35,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/Rakach/" element={<AboutMe />} />
 
-        <Route path="/Rakach/Solutions" element={<Solutions />} />
+        <Route path="/Rakach/Solutions/:page" element={<Solutions />} />
         <Route path="/Rakach/HowWorks" element={<HowWorks />} />
         <Route path="/Rakach/IndividualCoaching" element={<IndividualCoaching />} />
 
