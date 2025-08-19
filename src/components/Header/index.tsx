@@ -29,26 +29,24 @@ function Header({ page }: props) {
 
     const Pages: any = {
         "Rakach": pageAboutMe,
-        "Solutions": pageA,
+        "1": pageA,
+        "2": pageA,
+        "3": pageA,
+        "4": pageA,
         "HowWorks": pageB,
         "IndividualCoaching": pageC,
         "d": pageD,
     }
 
-
     useEffect(() => {
         setMobileMenu(false)
-        console.log(1);
-
         setTimeout(() => {
 
             if (pageAboutMe.current && ActivePAge.current && Pages[page]) {
-                console.log(2);
                 const HalfPageText = Pages[page].current.getBoundingClientRect().width / 2
                 const LeftPageText = Pages[page].current.getBoundingClientRect().left - 25
 
                 ActivePAge.current.style.left = `${LeftPageText + HalfPageText}px`
-                console.log();
             }
 
         }, 100);
@@ -77,7 +75,7 @@ function Header({ page }: props) {
                         About Me
                     </motion.p>
                 </Link>
-                <Link ref={pageA} to="Rakach/Solutions" className={style.HeaderNavigatePage} draggable="false">
+                <Link ref={pageA} to="Rakach/Solutions/1" className={style.HeaderNavigatePage} draggable="false">
                     <motion.p
                         initial={{ y: -50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
