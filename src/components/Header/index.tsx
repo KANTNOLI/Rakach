@@ -29,7 +29,7 @@ function Header({ page }: props) {
 
     const Pages: any = {
         "Rakach": pageAboutMe,
-        "a": pageA,
+        "Solutions": pageA,
         "HowWorks": pageB,
         "IndividualCoaching": pageC,
         "d": pageD,
@@ -77,7 +77,7 @@ function Header({ page }: props) {
                         About Me
                     </motion.p>
                 </Link>
-                <Link ref={pageA} to="Rakach/a" className={style.HeaderNavigatePage} draggable="false">
+                <Link ref={pageA} to="Rakach/Solutions" className={style.HeaderNavigatePage} draggable="false">
                     <motion.p
                         initial={{ y: -50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
