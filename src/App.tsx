@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import { useEffect, useState } from "react"
 import AboutMe from "./components/AboutMe";
 import IndividualCoaching from "./components/IndividualCoaching";
+import HowWorks from "./components/HowWorks";
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         <Route path="/Rakach/" element={<AboutMe />} />
 
         <Route path="/Rakach/a" element={<p>test a</p>} />
-        <Route path="/Rakach/HowWorks" element={<p>test b</p>} />
+        <Route path="/Rakach/HowWorks" element={<HowWorks />} />
         <Route path="/Rakach/IndividualCoaching" element={<IndividualCoaching />} />
 
         <Route path="*" element={<p>Error</p>} />
