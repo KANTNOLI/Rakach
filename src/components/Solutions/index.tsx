@@ -53,7 +53,7 @@ function Solutions() {
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={stylePreview.PreviewSPart}>
-                                <img src="..../../../public/SM2.webp" alt="" />
+                                <img src="./SM2.webp" alt="" />
                             </motion.div>
                         </section>
 
@@ -65,7 +65,7 @@ function Solutions() {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleExample.ExampleLPart}>
-                                <img src="..../../../public/SM1.webp" alt="SM2.webp" />
+                                <img src="./SM1.webp" alt="SM2.webp" />
                             </motion.div>
 
                             <motion.div
@@ -132,7 +132,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -161,7 +161,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -190,7 +190,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -220,7 +220,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -298,7 +298,7 @@ function Solutions() {
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={stylePreview.PreviewSPart}>
-                                <img src="..../../../public/SM1.webp" alt="" />
+                                <img src="./SM1.webp" alt="" />
                             </motion.div>
                         </section>
 
@@ -310,7 +310,7 @@ function Solutions() {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleExample.ExampleLPart}>
-                                <img src="..../../../public/SM3.webp" alt="" />
+                                <img src="./SM3.webp" alt="" />
                             </motion.div>
 
                             <motion.div
@@ -377,7 +377,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -406,7 +406,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -435,7 +435,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -464,7 +464,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -542,7 +542,7 @@ function Solutions() {
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={stylePreview.PreviewSPart}>
-                                <img src="..../../../public/SM3.webp" alt="" />
+                                <img src="./SM3.webp" alt="" />
                             </motion.div>
                         </section>
 
@@ -554,7 +554,7 @@ function Solutions() {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleExample.ExampleLPart}>
-                                <img src="..../../../public/SM1.webp" alt="" />
+                                <img src="./SM1.webp" alt="" />
                             </motion.div>
 
                             <motion.div
@@ -617,7 +617,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -646,7 +646,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -675,7 +675,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -704,7 +704,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -782,7 +782,7 @@ function Solutions() {
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={stylePreview.PreviewSPart}>
-                                <img src="..../../../public/SM2.webp" alt="" />
+                                <img src="./SM2.webp" alt="" />
                             </motion.div>
                         </section>
 
@@ -794,7 +794,7 @@ function Solutions() {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleExample.ExampleLPart}>
-                                <img src="..../../../public/SM3.webp" alt="" />
+                                <img src="./SM3.webp" alt="" />
                             </motion.div>
 
                             <motion.div
@@ -857,7 +857,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -886,7 +886,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -915,7 +915,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
@@ -944,7 +944,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesIcon}>
-                                        <img src="..../../../public/home.png" alt="home.png" />
+                                        <img src="./home.png" alt="home.png" />
                                     </motion.div>
 
                                     <motion.p
