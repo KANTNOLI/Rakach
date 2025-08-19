@@ -8,7 +8,7 @@ import styleWork from "./Work.module.scss";
 import styleAbout from "./About.module.scss";
 import styleExit from "./Exit.module.scss"
 
-function IndividualCoaching() {
+function HowWorks() {
 
     return (
         <section className={stylePreview.AboutMe}>
@@ -49,7 +49,7 @@ function IndividualCoaching() {
             </section>
 
             {/* tabls1 */}
-            <section
+            {/* <section
                 className={styleWork.Work}>
                 <motion.p
                     viewport={{ once: true }}
@@ -220,11 +220,11 @@ function IndividualCoaching() {
                         </motion.div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
             {/* idk */}
-            <section className={styleExample.Example}>
+            {/* <section className={styleExample.Example}>
                 <motion.div
                     viewport={{ once: true }}
                     initial={{ y: -80, opacity: 0 }}
@@ -277,7 +277,7 @@ function IndividualCoaching() {
                         help your teen. Which is better for them forever
                     </p>
                 </motion.div>
-            </section>
+            </section> */}
 
             {/* tabls2 */}
             <section className={styleSteps.Steps}>
@@ -287,7 +287,7 @@ function IndividualCoaching() {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: .5 }}
                     className={styleSteps.StepsTitle}>
-                    When you implement these key strategies, your team will flourish in an environment where
+                    What We’ll Be Working With: The Most Important Aspects
                 </motion.p>
 
                 <div className={styleSteps.StepsTypes}>
@@ -306,14 +306,14 @@ function IndividualCoaching() {
                             viewport={{ once: true }}
                             whileInView={{ opacity: 1 }}
                             transition={{ ease: "easeInOut", duration: .8 }}
-                            className={styleSteps.StepsTypesTitle}>Collaboration</motion.p>
+                            className={styleSteps.StepsTypesTitle}>Flexible Scheduling</motion.p>
                         <motion.p
                             initial={{ y: 50, opacity: 0 }}
                             viewport={{ once: true }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ ease: "easeInOut", duration: .5 }}
                             className={styleSteps.StepsTypesDesc}>
-                            There is no more wondering how to improve teamwork. You’ll have confidence in your team’s ability to collaborate effectively and achieve shared goals like never before
+                            TCoaching that fits your team’s rhythm, anytime, anywhere
                         </motion.p>
                     </div>
 
@@ -332,14 +332,14 @@ function IndividualCoaching() {
                             viewport={{ once: true }}
                             whileInView={{ opacity: 1 }}
                             transition={{ ease: "easeInOut", duration: .8 }}
-                            className={styleSteps.StepsTypesTitle}>Leadership</motion.p>
+                            className={styleSteps.StepsTypesTitle}>Confidential & Safe</motion.p>
                         <motion.p
                             initial={{ y: 50, opacity: 0 }}
                             viewport={{ once: true }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ ease: "easeInOut", duration: .5 }}
                             className={styleSteps.StepsTypesDesc}>
-                            There is no more questioning your leadership skills. You’ll develop the confidence and strategies to lead your team to success and inspire them to reach new heights
+                            A secure space for honest conversations and real growth
                         </motion.p>
                     </div>
 
@@ -358,14 +358,67 @@ function IndividualCoaching() {
                             viewport={{ once: true }}
                             whileInView={{ opacity: 1 }}
                             transition={{ ease: "easeInOut", duration: .8 }}
-                            className={styleSteps.StepsTypesTitle}>Growth</motion.p>
+                            className={styleSteps.StepsTypesTitle}>Trust-Building Focus</motion.p>
                         <motion.p
                             initial={{ y: 50, opacity: 0 }}
                             viewport={{ once: true }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ ease: "easeInOut", duration: .5 }}
                             className={styleSteps.StepsTypesDesc}>
-                            There is no more uncertainty about your team’s future. You’ll foster an environment of growth and learning, leading to unprecedented team performance and satisfaction
+                            Strengthening bonds that power collaboration and success
+                        </motion.p>
+                    </div>
+
+                    <div className={styleSteps.StepsTypesType}>
+                        <motion.div
+                            initial={{ y: -50, opacity: 0 }}
+                            viewport={{ once: true }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ ease: "easeInOut", duration: .5 }}
+                            className={styleSteps.StepsTypesIcon}>
+                            <img src="./home.png" alt="home.png" />
+                        </motion.div>
+
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            viewport={{ once: true }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ ease: "easeInOut", duration: .8 }}
+                            className={styleSteps.StepsTypesTitle}>High Impact Solutions</motion.p>
+                        <motion.p
+                            initial={{ y: 50, opacity: 0 }}
+                            viewport={{ once: true }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ ease: "easeInOut", duration: .5 }}
+                            className={styleSteps.StepsTypesDesc}>
+                            Immediate strategies that make a difference—fast
+                        </motion.p>
+                    </div>
+
+                    <div className={styleSteps.StepsTypesType}>
+                        <motion.div
+                            initial={{ y: -50, opacity: 0 }}
+                            viewport={{ once: true }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ ease: "easeInOut", duration: .5 }}
+                            className={styleSteps.StepsTypesIcon}>
+                            <img src="./home.png" alt="home.png" />
+                        </motion.div>
+
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            viewport={{ once: true }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ ease: "easeInOut", duration: .8 }}
+                            className={styleSteps.StepsTypesTitle}>Lasting Skills Development
+                        </motion.p>
+                        <motion.p
+                            initial={{ y: 50, opacity: 0 }}
+                            viewport={{ once: true }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ ease: "easeInOut", duration: .5 }}
+                            className={styleSteps.StepsTypesDesc}>
+                            Skills that grow with your team—today and tomorrow
                         </motion.p>
                     </div>
                 </div>
@@ -390,7 +443,7 @@ function IndividualCoaching() {
                 </motion.button>
             </section>
 
-            <section className={styleAbout.About}>
+            {/* <section className={styleAbout.About}>
                 <motion.div
                     initial={{ x: -80, opacity: 0 }}
                     viewport={{ once: true }}
@@ -415,9 +468,9 @@ function IndividualCoaching() {
                 </motion.div>
 
 
-            </section>
+            </section> */}
 
-            <section className={styleExit.Exit}>
+            {/* <section className={styleExit.Exit}>
                 <motion.p
                     initial={{ y: -50, opacity: 0 }}
                     viewport={{ once: true }}
@@ -433,10 +486,10 @@ function IndividualCoaching() {
                     className={styleExit.ExitBtn}>
                     Schedule your free call
                 </motion.button>
-            </section>
+            </section> */}
 
         </section>
     );
 }
 
-export default IndividualCoaching;
+export default HowWorks;
