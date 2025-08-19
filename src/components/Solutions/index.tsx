@@ -248,7 +248,7 @@ function Solutions() {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleSteps.StepsDesc}>
-                                text text text text text text text text text text text text text text text 
+                                text text text text text text text text text text text text text text text
                             </motion.p>
 
                             <motion.button
@@ -275,20 +275,19 @@ function Solutions() {
 
                                 className={stylePreview.PreviewFPart}>
                                 <p className={stylePreview.PreviewFPartTitle}>
-                                    Struggling with team effectiveness in your organization?
+                                    Leadership Development
                                 </p>
                                 <p className={stylePreview.PreviewFPartTitleDesc}>
-                                    Book a consultation to explore your team’s challenges
-                                </p>
-                                <div className={stylePreview.customLine}></div>
-                                <p className={stylePreview.PreviewFPartDesc}>
-                                    We will work together to enhance your team’s dynamics
+                                    Build confident, adaptable leaders who inspire results
                                 </p>
                                 <p className={stylePreview.PreviewFPartDesc}>
-                                    Let’s start improving collaboration and performance
+                                    Are you prepared to lead with confidence and inspire your team to new heights?
+                                </p>
+                                <p className={stylePreview.PreviewFPartDesc}>
+                                    Discover how personalized leadership coaching can unlock your full potential
                                 </p>
                                 <button className={stylePreview.PreviewFPartBtn}>
-                                    Schedule your free call
+                                    Book Your Leadership Session
                                 </button>
                             </motion.div>
 
@@ -299,7 +298,7 @@ function Solutions() {
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={stylePreview.PreviewSPart}>
-                                <img src="..../../../public/SM2.webp" alt="" />
+                                <img src="..../../../public/SM1.webp" alt="" />
                             </motion.div>
                         </section>
 
@@ -310,7 +309,9 @@ function Solutions() {
                                 initial={{ y: -80, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
-                                className={styleExample.ExampleLPart}>500px</motion.div>
+                                className={styleExample.ExampleLPart}>
+                                <img src="..../../../public/SM3.webp" alt="" />
+                            </motion.div>
 
                             <motion.div
                                 key={`opacity44_${page}`}
@@ -320,43 +321,39 @@ function Solutions() {
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleExample.ExampleRPart}>
                                 <p className={styleExample.ExampleRPartTitle}>
-                                    Something has happened with your teen...
+                                    Leadership Development
                                 </p>
                                 <p className={styleExample.ExampleRPartTitleDesc}>
-                                    And as a parent, you’re at the lowest point you never imagined
-                                    possible. Maybe…
+                                    Through personalized coaching, we focus on
                                 </p>
 
                                 <ul className={styleExample.ExampleRPartList}>
                                     <li className={styleExample.ExampleRPartListPart}>
-                                        Their secret is out
+                                        Cultivating emotional intelligence and self-awareness
                                     </li>
                                     <li className={styleExample.ExampleRPartListPart}>
-                                        You saw what was on their phone
+                                        Enhancing decision-making and problem-solving skills
                                     </li>
                                     <li className={styleExample.ExampleRPartListPart}>
-                                        The cops were called
+                                        Building the ability to inspire and empower others
                                     </li>
                                     <li className={styleExample.ExampleRPartListPart}>
-                                        They said what they said, and it broke your soul
+                                        Navigating change and uncertainty with resilience
+                                    </li>
+                                    <li className={styleExample.ExampleRPartListPart}>
+                                        Aligning leadership actions with team and organizational values
                                     </li>
                                 </ul>
 
                                 <p
                                     className={`${styleExample.ExampleRPartDesc} ${styleExample.ExampleRPartDescFist}`}
                                 >
-                                    Everyone’s behavior is… Horrifying. You never thought the toddler
-                                    who threw their arms around you could be here. And now you want to
-                                    hide under a rock for how disappointed and ashamed you feel.
+                                    Effective leadership is the cornerstone of any successful team. Even talented groups can struggle without clear direction and inspiring guidance. I work with leaders at all levels to develop the mindset, skills, and confidence needed to motivate their teams and drive results
                                 </p>
                                 <p className={styleExample.ExampleRPartDesc}>
-                                    This spot feels permanently condemned. Life could never be the same
-                                    again after what you know now… but it can actually be better.
+                                    Leaders who invest in their growth create ripple effects that elevate the entire team, fostering a culture of trust, accountability, and continuous improvement
                                 </p>
-                                <p className={styleExample.ExampleRPartDesc}>
-                                    Better for you on the daily, but even better for how you love and
-                                    help your teen. Which is better for them forever
-                                </p>
+
                             </motion.div>
                         </section>
 
@@ -368,7 +365,7 @@ function Solutions() {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleSteps.StepsTitle}>
-                                When you implement these key strategies, your team will flourish in an environment where
+                                Outcomes you can expect
                             </motion.p>
 
                             <div className={styleSteps.StepsTypes}>
@@ -389,7 +386,7 @@ function Solutions() {
                                         viewport={{ once: true }}
                                         whileInView={{ opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .8 }}
-                                        className={styleSteps.StepsTypesTitle}>Collaboration</motion.p>
+                                        className={styleSteps.StepsTypesTitle}>Title 1</motion.p>
                                     <motion.p
                                         initial={{ y: 50, opacity: 0 }}
                                         key={`opacity40_${page}`}
@@ -397,7 +394,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesDesc}>
-                                        There is no more wondering how to improve teamwork. You’ll have confidence in your team’s ability to collaborate effectively and achieve shared goals like never before
+                                        Unified team direction and purpose
                                     </motion.p>
                                 </div>
 
@@ -418,7 +415,7 @@ function Solutions() {
                                         viewport={{ once: true }}
                                         whileInView={{ opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .8 }}
-                                        className={styleSteps.StepsTypesTitle}>Leadership</motion.p>
+                                        className={styleSteps.StepsTypesTitle}>Title 2</motion.p>
                                     <motion.p
                                         initial={{ y: 50, opacity: 0 }}
                                         key={`37_${page}`}
@@ -426,7 +423,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesDesc}>
-                                        There is no more questioning your leadership skills. You’ll develop the confidence and strategies to lead your team to success and inspire them to reach new heights
+                                        Clear expectations and reduced role confusion
                                     </motion.p>
                                 </div>
 
@@ -447,7 +444,7 @@ function Solutions() {
                                         viewport={{ once: true }}
                                         whileInView={{ opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .8 }}
-                                        className={styleSteps.StepsTypesTitle}>Growth</motion.p>
+                                        className={styleSteps.StepsTypesTitle}>Title 3</motion.p>
                                     <motion.p
                                         initial={{ y: 50, opacity: 0 }}
                                         key={`34_${page}`}
@@ -455,7 +452,36 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesDesc}>
-                                        There is no more uncertainty about your team’s future. You’ll foster an environment of growth and learning, leading to unprecedented team performance and satisfaction
+                                        Improved communication and collaboration
+                                    </motion.p>
+                                </div>
+
+                                <div className={styleSteps.StepsTypesType}>
+                                    <motion.div
+                                        initial={{ y: -50, opacity: 0 }}
+                                        key={`36_${page}`}
+                                        viewport={{ once: true }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        transition={{ ease: "easeInOut", duration: .5 }}
+                                        className={styleSteps.StepsTypesIcon}>
+                                        <img src="..../../../public/home.png" alt="home.png" />
+                                    </motion.div>
+
+                                    <motion.p
+                                        initial={{ opacity: 0 }}
+                                        key={`35_${page}`}
+                                        viewport={{ once: true }}
+                                        whileInView={{ opacity: 1 }}
+                                        transition={{ ease: "easeInOut", duration: .8 }}
+                                        className={styleSteps.StepsTypesTitle}>Title 4</motion.p>
+                                    <motion.p
+                                        initial={{ y: 50, opacity: 0 }}
+                                        key={`34_${page}`}
+                                        viewport={{ once: true }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        transition={{ ease: "easeInOut", duration: .5 }}
+                                        className={styleSteps.StepsTypesDesc}>
+                                        Enhanced accountability and follow-through
                                     </motion.p>
                                 </div>
                             </div>
@@ -466,9 +492,7 @@ function Solutions() {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleSteps.StepsDesc}>
-                                Nothing will intimidate you or make you feel powerless as a parent
-                                ever again.
-                                <div className={styleSteps.customLine}>{"   "}</div>
+                                text text text text text text text text text text text text text text text
                             </motion.p>
 
                             <motion.button
@@ -495,20 +519,19 @@ function Solutions() {
 
                                 className={stylePreview.PreviewFPart}>
                                 <p className={stylePreview.PreviewFPartTitle}>
-                                    Struggling with team effectiveness in your organization?
+                                    Team Alignment Workshops
                                 </p>
                                 <p className={stylePreview.PreviewFPartTitleDesc}>
-                                    Book a consultation to explore your team’s challenges
-                                </p>
-                                <div className={stylePreview.customLine}></div>
-                                <p className={stylePreview.PreviewFPartDesc}>
-                                    We will work together to enhance your team’s dynamics
+                                    Clarify goals, strengthen accountability, and unite around a shared vision
                                 </p>
                                 <p className={stylePreview.PreviewFPartDesc}>
-                                    Let’s start improving collaboration and performance
+                                    Is your team aligned and clear on its goals?
+                                </p>
+                                <p className={stylePreview.PreviewFPartDesc}>
+                                    Bring your team together with a workshop designed to clarify priorities and boost accountability
                                 </p>
                                 <button className={stylePreview.PreviewFPartBtn}>
-                                    Schedule your free call
+                                    Request a Workshop Proposal
                                 </button>
                             </motion.div>
 
@@ -519,7 +542,7 @@ function Solutions() {
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={stylePreview.PreviewSPart}>
-                                <img src="..../../../public/SM2.webp" alt="" />
+                                <img src="..../../../public/SM3.webp" alt="" />
                             </motion.div>
                         </section>
 
@@ -530,7 +553,9 @@ function Solutions() {
                                 initial={{ y: -80, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
-                                className={styleExample.ExampleLPart}>500px</motion.div>
+                                className={styleExample.ExampleLPart}>
+                                <img src="..../../../public/SM1.webp" alt="" />
+                            </motion.div>
 
                             <motion.div
                                 key={`__28_${page}`}
@@ -540,42 +565,34 @@ function Solutions() {
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleExample.ExampleRPart}>
                                 <p className={styleExample.ExampleRPartTitle}>
-                                    Something has happened with your teen...
+                                    Team Alignment Workshops
                                 </p>
                                 <p className={styleExample.ExampleRPartTitleDesc}>
-                                    And as a parent, you’re at the lowest point you never imagined
-                                    possible. Maybe…
+                                    During these interactive sessions, teams will:
                                 </p>
 
                                 <ul className={styleExample.ExampleRPartList}>
                                     <li className={styleExample.ExampleRPartListPart}>
-                                        Their secret is out
+                                        Clarify their shared vision and objectives
                                     </li>
                                     <li className={styleExample.ExampleRPartListPart}>
-                                        You saw what was on their phone
+                                        Define individual roles and responsibilities
                                     </li>
                                     <li className={styleExample.ExampleRPartListPart}>
-                                        The cops were called
+                                        Create agreements on communication, decision-making, and conflict resolution
                                     </li>
                                     <li className={styleExample.ExampleRPartListPart}>
-                                        They said what they said, and it broke your soul
+                                        Develop accountability structures to keep progress on track
                                     </li>
                                 </ul>
 
                                 <p
                                     className={`${styleExample.ExampleRPartDesc} ${styleExample.ExampleRPartDescFist}`}
                                 >
-                                    Everyone’s behavior is… Horrifying. You never thought the toddler
-                                    who threw their arms around you could be here. And now you want to
-                                    hide under a rock for how disappointed and ashamed you feel.
+                                    When teams lack clarity on goals, roles, and ways of working, productivity and morale suffer. My team alignment workshops help groups come together to define their mission, establish clear priorities, and agree on effective collaboration methods
                                 </p>
                                 <p className={styleExample.ExampleRPartDesc}>
-                                    This spot feels permanently condemned. Life could never be the same
-                                    again after what you know now… but it can actually be better.
-                                </p>
-                                <p className={styleExample.ExampleRPartDesc}>
-                                    Better for you on the daily, but even better for how you love and
-                                    help your teen. Which is better for them forever
+                                    These workshops are designed to be practical and engaging, resulting in a clear roadmap that energizes the team and guides daily work
                                 </p>
                             </motion.div>
                         </section>
@@ -588,7 +605,7 @@ function Solutions() {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleSteps.StepsTitle}>
-                                When you implement these key strategies, your team will flourish in an environment where
+                                Outcomes you can expect
                             </motion.p>
 
                             <div className={styleSteps.StepsTypes}>
@@ -609,7 +626,7 @@ function Solutions() {
                                         viewport={{ once: true }}
                                         whileInView={{ opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .8 }}
-                                        className={styleSteps.StepsTypesTitle}>Collaboration</motion.p>
+                                        className={styleSteps.StepsTypesTitle}>Title 1</motion.p>
                                     <motion.p
                                         initial={{ y: 50, opacity: 0 }}
                                         key={`__24_${page}`}
@@ -617,7 +634,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesDesc}>
-                                        There is no more wondering how to improve teamwork. You’ll have confidence in your team’s ability to collaborate effectively and achieve shared goals like never before
+                                        Unified team direction and purpose
                                     </motion.p>
                                 </div>
 
@@ -638,7 +655,7 @@ function Solutions() {
                                         viewport={{ once: true }}
                                         whileInView={{ opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .8 }}
-                                        className={styleSteps.StepsTypesTitle}>Leadership</motion.p>
+                                        className={styleSteps.StepsTypesTitle}>Title 2</motion.p>
                                     <motion.p
                                         initial={{ y: 50, opacity: 0 }}
                                         key={`21${page}`}
@@ -646,7 +663,7 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesDesc}>
-                                        There is no more questioning your leadership skills. You’ll develop the confidence and strategies to lead your team to success and inspire them to reach new heights
+                                        Clear expectations and reduced role confusion
                                     </motion.p>
                                 </div>
 
@@ -667,7 +684,7 @@ function Solutions() {
                                         viewport={{ once: true }}
                                         whileInView={{ opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .8 }}
-                                        className={styleSteps.StepsTypesTitle}>Growth</motion.p>
+                                        className={styleSteps.StepsTypesTitle}>Title 3</motion.p>
                                     <motion.p
                                         initial={{ y: 50, opacity: 0 }}
                                         key={`_18__${page}`}
@@ -675,7 +692,36 @@ function Solutions() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ ease: "easeInOut", duration: .5 }}
                                         className={styleSteps.StepsTypesDesc}>
-                                        There is no more uncertainty about your team’s future. You’ll foster an environment of growth and learning, leading to unprecedented team performance and satisfaction
+                                        Improved communication and collaboration
+                                    </motion.p>
+                                </div>
+
+                                 <div className={styleSteps.StepsTypesType}>
+                                    <motion.div
+                                        initial={{ y: -50, opacity: 0 }}
+                                        key={`20${page}`}
+                                        viewport={{ once: true }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        transition={{ ease: "easeInOut", duration: .5 }}
+                                        className={styleSteps.StepsTypesIcon}>
+                                        <img src="..../../../public/home.png" alt="home.png" />
+                                    </motion.div>
+
+                                    <motion.p
+                                        initial={{ opacity: 0 }}
+                                        key={`__19_${page}`}
+                                        viewport={{ once: true }}
+                                        whileInView={{ opacity: 1 }}
+                                        transition={{ ease: "easeInOut", duration: .8 }}
+                                        className={styleSteps.StepsTypesTitle}>Title 4</motion.p>
+                                    <motion.p
+                                        initial={{ y: 50, opacity: 0 }}
+                                        key={`_18__${page}`}
+                                        viewport={{ once: true }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        transition={{ ease: "easeInOut", duration: .5 }}
+                                        className={styleSteps.StepsTypesDesc}>
+                                         Enhanced accountability and follow-through
                                     </motion.p>
                                 </div>
                             </div>
@@ -686,9 +732,7 @@ function Solutions() {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut", duration: .5 }}
                                 className={styleSteps.StepsDesc}>
-                                Nothing will intimidate you or make you feel powerless as a parent
-                                ever again.
-                                <div className={styleSteps.customLine}>{"   "}</div>
+                                Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
                             </motion.p>
 
                             <motion.button
