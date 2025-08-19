@@ -13,7 +13,7 @@ function HowWorks() {
     return (
         <section className={stylePreview.AboutMe}>
             <section className={stylePreview.Preview}>
-                <motion.div
+                <motion.div 
                     viewport={{ once: true }}
                     initial={{ x: -80, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
