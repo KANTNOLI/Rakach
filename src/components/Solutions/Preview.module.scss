@@ -29,7 +29,7 @@
     // background-color: rgba(81, 0, 255, 0.207);
 
     .PreviewFPart {
-      width: 550px;
+      width: 500px;
       height: 80%;
       margin-right: 30px;
 
@@ -43,6 +43,7 @@
 
       .PreviewFPartTitleDesc {
         margin-top: 20px;
+        margin-bottom: 25px;
 
         width: fit-content;
 
@@ -62,12 +63,8 @@
         );
       }
 
-      .PreviewFPartDesc:last-child {
-        margin-top: 5px;
-      }
-
       .PreviewFPartDesc {
-        margin-top: 15px;
+        margin-top: 10px;
         font-size: 18px;
         color: #2e2e2e;
       }
@@ -78,7 +75,7 @@
         margin-top: 20px;
         padding: 0px 30px;
 
-        width: 300px;
+        width: 340px;
         height: 45px;
 
         text-transform: uppercase;
